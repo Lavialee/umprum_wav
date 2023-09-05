@@ -1,0 +1,814 @@
+@font-face {
+  font-family: 'Dots';
+  src: url('fonts/DotsAllForNow.ttf') format('truetype');
+}
+@font-face {
+ font-family: "Monument";
+ font-weight: normal;
+  src: url("fonts/PPMonumentExtended-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Monument";
+  font-weight: bold;
+   src: url("fonts/PPMonumentExtended-Bold.ttf") format('truetype');
+ }
+    /* GENERIC */
+html {
+      scroll-behavior: smooth;
+      overflow-x: hidden;
+    }
+    
+ body {
+  overflow-y: scroll; /* Add the ability to scroll */
+  overflow-x: hidden;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  margin: 0;
+  font-family: "Monument";
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+  padding: 5px 1vw;
+}
+a:hover{
+text-decoration: underline;
+}
+.dots{
+  font-family: "Dots";
+  font-size: 24px;
+}
+
+.header_bold_monument{
+  font-weight: bold;
+  font-size: 36px;
+  text-align: center;
+}
+.center{
+  text-align: center;
+}
+.txt20{
+  font-size: 20px;
+}
+.margin96{
+  margin: 96px 0;
+}
+.topmargin96{margin-top:90px;}
+.botpad96{padding-bottom:90px;}
+
+.flexbox_row, .flexbox_column, .flexbox_instruments_right,.flexbox_instruments_left, .one_instrument_section{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.flexbox_column,.one_instrument_section{
+  flex-flow: column wrap;
+}
+.flexbox_row{
+  flex-flow: row;
+}
+
+.space_around{
+  justify-content: space-around;
+}
+.space_evenly{
+  justify-content: space-evenly;
+}
+.space_between{
+  justify-content: space-between;
+}
+.gradient_box{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.black_blob{
+  color: white;
+  background-color: #1F1F1F;
+  padding: 21px 30%;
+  border-radius: 97px;
+  margin-top: 32px;
+  text-align: center;
+}
+.credits_symbol{
+  margin: 0 10px;
+}
+.credits_part{
+  padding:8px;
+  justify-content: center; 
+  align-items: flex-start;
+  border-top: 2px solid #FFA7D1;
+}
+
+#sponsors {
+  display: block;
+  width: 90%;
+  padding-bottom: 4vw;
+  content: url("svgs/sponzori.svg");
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#FFFFFF
+}
+#gradient8{
+  width: 100%;
+  height: 188px;
+  background: linear-gradient(180deg, #FFA7D1 0%, #FFFFFF 100%);
+}
+#gradient7{
+  width: 100%;
+  height: 96px;
+  background: linear-gradient(180deg, #1F1F1F 0%, #FFA7D1 16.67%, rgba(199, 199, 198, 0) 100%);
+}
+.black_blob_wide{
+  color: white;
+  width: 90%;
+  max-width: 900px;
+  background-color: #1F1F1F;
+  padding: 21px 20px;
+    border-radius: 97px;
+  margin-top: 32px;
+  text-align: center;
+}
+.names{
+  text-align: left; width: 40%;}
+.position{
+  text-align: right; width: 30%;}
+#socials{
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #FFA7D1 55.73%, #F24832 100%);
+}
+.gradient6{
+  width: 100%;
+  height: 32px;
+  background: linear-gradient(180deg, #16452E 0%, #F54029 14.06%, rgba(242, 242, 242, 0) 100%);;
+}
+/*SEVENTH PAGE*/
+#info_melodize{width: 50%; font-size: 13px;}
+#info_header{font-size: 18px; margin-top: 64px;}
+#catchphrase_melodize{text-align: center; font-weight: bold; font-size: 20px; }
+#perex2_melodize{text-align: center; margin-bottom: 32px;}
+#perex_melodize{
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 64px;
+  max-width: 700px;
+}
+#about_melodize{
+  font-size: 48px;
+  text-align: center;
+  margin-bottom: 64px;
+}
+#gradient5{
+  background: linear-gradient(180deg, #16452E 0%, #F54029 14.06%, rgba(242, 242, 242, 0) 100%);
+  height: 160px;
+  width: 100%;
+}
+/* SIXTH PAGE */
+#about_UMPRUM{
+  font-size: 48px;
+  width: 50%;
+  text-align: right;
+  margin-top: -13px;
+}
+#text_UMPRUM{
+  font-size: 13px;
+  width: 40%;
+  margin-bottom: 128px;
+  max-width: 720px;
+
+}
+/* FIFTH PAGE */
+.one_instrument_section{
+  width: 80%;
+  gap: 64px;
+}
+.flexbox_instruments_right,.flexbox_instruments_left{
+  flex-flow: row;
+  justify-content: space-between; 
+  align-items: start;
+}
+.author{
+  font-size: 20px;
+  margin-bottom: 8px ;
+}
+.instagram{
+  font-size: 16px;
+  margin-bottom: 64px ;
+  padding: 0;
+}
+.instrument_texts{
+  align-items: flex-start;
+  width:50%;
+  font-size: 13px;
+  margin-bottom: 50px;
+}
+.instrument_photo{
+  width: 40%;
+  border-radius: 25px;
+  max-width: 520px;
+}
+.instrument_name{
+  font-size: 40px;
+  text-align: left;
+  margin-top: -10px;
+}
+#instruments_header{
+  font-size: 48px;
+  width: 80%;
+}
+#instruments{
+  background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 11.98%, rgba(242, 242, 242, 0) 86.98%, #F54029 100%);
+}
+/* FOURTH PAGE */
+#wav_text, #wav_text2{
+  clear: both;
+  font-size: 12px;
+  margin-left: 20%;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  max-width: 750px;
+}
+#wav_text2{
+  margin-bottom: 128px;
+}
+#whole_photo{
+  float: right;
+  width: 80%;
+}
+#wav_perex{
+  font-size: 18px;
+  max-width: 900px;
+  padding: 10px;
+}
+#repetice, #about_wav{  
+  font-size: 48px;
+}
+#repetice{
+  text-align: right;
+  padding-right: 16px;
+}
+#about_wav{
+  text-align: left;
+  width: 40%;
+  white-space: nowrap;
+  padding-left: 10%;
+}
+#gradient3{
+  background: linear-gradient(180deg, rgba(242, 242, 242, 0) 0%, #FFA7D1 59.9%, #F24832 100%);
+  height: 128px;
+  width: 100%;
+}
+#gradient4{
+  background: linear-gradient(360deg, #F2F2F2 0%, #FFA7D1 61.98%, #C7C7C6 82.81%, #FFA7D1 100%);
+  height: 192px;
+  width: 100%;
+}
+#wav_project{
+  border: 2px solid; padding: 24px 0px; margin-top: 0;
+}
+/* THIRD PAGE */
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 5fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+
+  }
+  #brunch_jam_sessions{
+    margin: 30px 0;
+  }
+  #jam_sessions{
+    margin: 30px 0; 
+  }
+.date{ justify-content: center; background-color: #FFA7D1; border: 2px solid #16452E;padding: 10px 25px;}
+.time{ justify-content: center; color: #C7C7C6; background-color: #1F1F1F; padding: 10px 25px;}
+.interpret{ text-align: left; border: 2px solid #FFA7D1;padding: 10px 15px;}
+.div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{display: flex; align-items: center;}
+  .div1 { grid-area: 1 / 1 / 2 / 2;}
+  .div2 { grid-area: 1 / 2 / 2 / 3;}
+  .div3 { grid-area: 1 / 3 / 2 / 4;}
+  .div4 { grid-area: 2 / 1 / 3 / 2;}
+  .div5 { grid-area: 2 / 2 / 3 / 3;}
+  .div6 { grid-area: 2 / 3 / 3 / 4;}
+  .div7 { grid-area: 3 / 1 / 4 / 2;}
+  .div8 { grid-area: 3 / 2 / 4 / 3;}
+  .div9 { grid-area: 3 / 3 / 4 / 4;}
+  
+/* SECOND PAGE */
+#first_links{
+  background: linear-gradient(180deg, #16452E 0%, #FFA7D1 59.9%, rgba(255, 255, 255, 0) 99.48%);
+  overflow: hidden;
+}
+#follow_our_shows,#experiment_with_the_sound{
+  margin-top: 80px; max-width: 560px;
+}
+#gradient2{
+  width: 100%;
+  height: 128px;
+  background: linear-gradient(180deg, rgba(253, 209, 230, 0) 0%, #FFA7D1 52.6%, #C7C7C6 57.81%, rgba(199, 199, 198, 0) 100%);
+}
+.gradient1{
+  width: 100%;
+  height: 32px;
+  background: linear-gradient(180deg, #16452E 0%, #FFA7D1 47.74%, #16452E 98.26%);
+} 
+  /* FIRST PAGE */
+.flexbox_nonuniversal{
+  display: flex;
+  align-items: center;
+  flex-flow: wrap;
+  margin: 0;
+  width: 100%;
+}
+
+#landing{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 58px);
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+#first_header{
+  justify-content: space-between;
+  flex-direction: row;
+  padding: 10px 5%;
+  width: 80%;
+  max-width: 1200px;
+}
+#logo_perex{
+  justify-content: space-between;
+  align-items:start;
+  padding: 10px 10%;
+  width: 100%;
+  max-width: 1200px;
+}
+#first_perex{
+  font-size: 18px;
+}
+#logo{
+  display:block;
+  align-self: center;
+  margin: 0 ;
+  width: 100%;
+}
+#adress_perex{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+#adress{
+  align-self: center;
+  text-align: center;
+  width: 50%;
+  padding: 10px 30px;
+  border-style: solid;
+  border-width: 1px;
+}
+#second_perex{
+  font-size: 18px;
+  width: 60%;
+  text-align: center;
+  align-self: center;
+}
+#background{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(svgs/background.svg);
+  height: 100%;
+  width: 100%;
+  background-position: center; 
+
+  
+  background-size: cover;
+  z-index: -3;
+}
+/* arrows */
+.arrow {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-top: 2px solid #1F1F1F;
+  border-right: 2px solid #1F1F1F;
+  margin: 0 10px;
+
+  /*position: absolute;
+  bottom: 40px;*/
+}
+#arrows{
+  height:30px;
+}
+.down-narrow {
+  transform: rotate(135deg) skew(-15deg, -15deg);
+}
+/* NAVIGACE */
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  height: 50px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 13px;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  z-index: 3;
+  position: fixed;
+  width: 100%;
+  justify-content: space-around;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.menu > li {
+  margin: 0 0vw;
+  overflow: hidden;
+}
+
+.menu-button-container {
+  display: none;
+  height: 100%;
+  width: 30px;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+.menu-button,
+.menu-button::before,
+.menu-button::after {
+  display: block;
+  background-color: #1F1F1F;
+  position: absolute;
+  height: 2px;
+  width: 30px;
+  transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  border-radius: 4px;
+}
+
+.menu-button::before {
+  content: '';
+  margin-top: -8px;
+}
+
+.menu-button::after {
+  content: '';
+  margin-top: 8px;
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::before {
+  margin-top: 0px;
+  transform: rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button {
+  background: rgba(255, 255, 255, 0);
+}
+
+#menu-toggle:checked + .menu-button-container .menu-button::after {
+  margin-top: 0px;
+  transform: rotate(-45deg);
+}
+/* NAVIGACE KONEC */
+
+@media (max-width: 700px) { 
+  .credits_symbol{
+    margin: 5px 100px;
+  }
+  .position{
+    text-align: center; width: 100%;
+    padding-top: 10px;  
+  }
+  .names{
+    text-align: center; width: 90%; padding-bottom: 10px;}
+  #sponsors {
+    display: block;
+    width: 90%;
+    padding-bottom: 50px;
+    content: url("svgs/sponzori_small.svg");}
+
+  .melodize_text{
+    padding:0 7.5%;
+    font-size: 12px;
+    text-align: center;
+  }
+  #info_melodize{width: 100%; font-size: 13px;}
+  #info_header{font-size: 14px; margin-top: 64px; padding:0 7.5%;     text-align: center;}
+  #catchphrase_melodize{text-align: center; font-weight: bold; font-size: 16px;  padding:0 20px;}
+  #perex2_melodize{text-align: center; margin-bottom: 32px; font-size: 13px; padding:0 7.5%;}
+  #perex_melodize{
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 64px;
+  padding:0 5%;
+  }
+  #about_melodize{
+  font-size: 26px;
+  text-align: center;
+  margin-bottom: 64px;
+  margin-left: 10px;
+  margin-right: 10px;
+
+}
+  #about_UMPRUM{
+    font-size: 26px;
+    width: 85%;
+    text-align: left;
+    margin-top: -5px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+
+  }
+  #text_UMPRUM{
+    font-size: 13px;
+    width: 100%;
+  
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 64px;
+  }
+  .one_instrument_section{
+    width: 85%;
+    gap: 0px;
+  }
+  .flexbox_instruments_right{
+    flex-flow:column-reverse;
+    margin-top: 70px;
+  }
+  .flexbox_instruments_left{
+    flex-flow:column;
+    margin-top: 70px;
+  }
+  .instrument_texts{
+    margin-bottom: -20px;
+    width: 100%;
+    text-align: left;
+  }
+  .instrument_name{
+    font-size: 26px;
+    margin-top: 10px;
+  }
+  .author{
+    font-size: 16px;
+    margin-bottom: 4px ;
+  }
+  .instagram{
+    font-size: 14px;
+    margin-bottom: 44px ;
+  }
+  .instrument_photo{
+    width: 100%;
+    margin-top: -80px;
+  }
+  #instruments_header{
+    font-size: 26px;
+    width: 100%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+  #instruments{
+    background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 8%, rgba(242, 242, 242, 0) 92%, #F54029 100%);
+  }
+  #wav_text, #wav_text2{
+    clear: both;
+    font-size: 13px;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-bottom: 20px;
+    max-width: 750px;
+  }
+  #wav_text2{
+    margin-bottom: 128px;
+  }
+  #whole_photo{
+    float:none;
+    width: 120%;
+  }
+  .black_blob{
+    margin-top: 20px;
+    text-align: center;
+  }
+  #experiment_with_the_sound{
+    margin-top: 100px; 
+  }
+  #follow_our_shows{
+    margin-top: 30px; 
+  }
+  #wav_project{
+    padding: 10px 0px; margin-top: 0;
+  }
+  #wav_perex{
+    font-size: 14px;
+    max-width: 900px;
+    margin: 0;
+    padding: 0;
+    margin-left: 8%;
+    margin-right: 7.5%;
+  }
+  #repetice, #about_wav{  
+    font-size: 26px;
+  } 
+  #about_wav{
+    margin-left: 7.5%;
+    padding: 0;
+  }
+  #brunch_jam_sessions{
+    margin-top: 0;
+    margin-bottom: -200px;
+  }
+  #jam_sessions{
+    margin: 0;
+  }
+  .parent {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    }
+    .div1,.div2,.div3,.div4,.div5,.div6,.div7,.div8,.div9{display: flex; align-items: center;}
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; margin-top: 20px;}
+    .div2 { grid-area: 1 / 2 / 2 / 3; margin-top: 20px;}
+    .div3 { grid-area: 2 / 1 / 3 / 3; }
+
+    .div4 { grid-area: 3 / 1 / 4 / 2; margin-top: 20px;}
+    .div5 { grid-area: 3 / 2 / 4 / 3; margin-top: 20px;}
+    .div6 { grid-area: 4 / 1 / 5 / 3; }
+    
+    .div7 { grid-area: 5 / 1 / 6 / 2; margin-top: 20px;}
+    .div8 { grid-area: 5 / 2 / 6 / 3; margin-top: 20px;}
+    .div9 { grid-area: 6 / 1 / 7 / 3; } 
+  .header_bold_monument{
+    font-size: 26px; 
+    margin: 0 10px;
+  }
+  .txt20{
+    font-size: 14px;
+  }
+  .margin96{
+    margin: 50px 0;
+  }
+  .topmargin96{margin-top:50px;}
+  .botpad96{padding-bottom:50px;}
+
+    /* FIRST PAGE */
+    #landing{
+      display: flex;
+      align-items: start;
+      margin: 0  7.5%;
+      flex-flow: column;
+      justify-content:space-evenly;
+      width: 85%;
+      height: calc(100svh-50px);
+  }
+  
+  .flexbox_row{
+    flex-flow: row wrap;
+  }
+  .only_pc{
+    display: none;
+  }
+  .coda{
+      display: none;
+    }  
+  .coda_phone{
+    width: 40px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
+  #first_header {
+    font-size: 16px;
+  
+    justify-content: start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 0;
+    margin: -25% 0px 0 0; 
+    
+  }
+  #first_header>div{
+    padding-right: 0;
+  }
+  #logo_perex{
+    padding: 0;
+    margin: 0;
+    align-items:start;
+    width: 100%;
+  }
+  #first_perex{
+    font-size: 14px;
+    margin: 0;
+    padding: 0;  
+    margin-bottom: 30px;
+  }
+  #logo{
+    margin-top: 2%;
+    width: 100%;
+    padding: 0;
+    align-self: self-start;
+  }
+  #adress_perex{
+    margin: 0;
+    width: 100%;
+  }
+  
+  #adress{
+    text-align: left;
+    width: auto;
+    padding: 10px 10px;  
+    align-self: self-start;
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 16px;
+    
+  }
+  #second_perex{
+    font-size: 14px;
+    margin:0;
+    width: auto; 
+    text-align: left;
+    }
+  #arrows{
+    height: 0px;
+    margin-top: -15%;
+    margin-left: 25%;
+  }
+  .dots{
+    font-size: 15px;
+    line-height:1.4;
+  }
+  #background{
+    top: -0%;
+    height: 120%;
+    background-position: center; }
+  
+  /* NAVIGACE */
+  .top-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .menu-button-container {
+    display: flex;
+    position: fixed;
+    margin: 10px;
+  }
+  .menu {
+    position: absolute;
+    top: 0;
+    margin-top: 50px;
+    left: 0;
+    flex-direction: column;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    position: fixed; /* Add this */
+    background-color: rgba(255, 255, 255, 0);
+
+    top: 0; /* Add this */
+  }
+  #menu-toggle ~ .menu li {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  #menu-toggle:checked ~ .menu li {
+    height: 35px;
+    padding: 0.5em;
+    transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+  .menu > li {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    width: 100%;
+    color: black;
+    background-color: #C7C7C7;
+  }
+}
