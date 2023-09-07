@@ -5,16 +5,13 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
 </script>
 
 <template>
-  <section class="flexbox_column" id="first_links">
-    <!--links to bandcamp and yt-->
-    <section class="gradient_box">
-      <!--gradients-->
-      <div class="gradient1"></div>
-      <div class="gradient1"></div>
-      <div class="gradient1"></div>
-    </section>
+  <!--links to bandcamp and yt-->
+  <section class="flexbox_column" id="bg-grad-explore">
+    <div class="gradient1"></div>
+    <div class="gradient1"></div>
+    <div class="gradient1"></div>
     <section class="flexbox_column space_between margin96">
-      <header class="header_bold_monument">
+      <header class="h2 bold centered">
         <!--explore the audiovisual-->
         <span class="only_pc">• </span>{{ t('explore.explore') }}<span class="only_pc"> •</span>
       </header>

@@ -18,7 +18,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <section class="flexbox_column" id="logo_perex">
       <p id="first_perex">
         {{ t('landing.perex_1_1') }} <br />
-        {{ t('landing.perex_1_2') }} <br />
+        {{ t('landing.perex_1_2') }} <br /> 
         {{ t('landing.perex_1_3') }} <br />
       </p>
       <img src="svgs/umprumwav.svg" id="logo" />
