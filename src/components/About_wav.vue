@@ -15,7 +15,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <header class="flexbox_row space_between margin96" id="wav_project">
       <!--gradient a .wav projekt-->
       <header id="about_wav">{{ t('about_wav.header') }}</header>
-      <section id="repetice">•||</section>
     </header>
     <main>
       <!--text-->

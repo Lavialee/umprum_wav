@@ -8,83 +8,77 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <div id="gradient7"></div>
     <section class="flexbox_column margin96">
       <header class="header_bold_monument" style="margin-bottom: 64px">
-        THIS PROJECT WOULD NOT EXIST WITHOUT
+        {{ t('credits.header') }}
       </header>
       <section class="flexbox_column">
         <section class="flexbox_row credits_part">
-          <div class="position">PROJECT MANAGEMENT</div>
+          <div class="position">{{ t('credits.project_management') }}</div>
           <img src="svgs/symbol1.svg" class="credits_symbol" />
           <div class="names">
-            Michal&nbsp;Froněk, Jan&nbsp;Němeček, Jan&nbsp;Netušil, Jiří&nbsp;Hölzel
+            {{ t('credits.project_management_names') }}
           </div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">INSTALLATION</div>
+          <div class="position">{{ t('credits.installation') }}</div>
           <img src="svgs/symbol2.svg" class="credits_symbol" />
-          <div class="names">
-            Jan&nbsp;Lechner, Sofia&nbsp;Artemeva, Ivo&nbsp;Jedlička, Miloslav&nbsp;Chytil,
-            Theodor&nbsp;Hozák, Adam&nbsp;Kvaček
-          </div>
+          <div class="names">{{ t('credits.installation_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">EXHIBITING AUTHORS</div>
+          <div class="position">{{ t('credits.exhibiting') }}</div>
           <img src="svgs/symbol3.svg" class="credits_symbol" />
           <div class="names">
-            Ivo&nbsp;Jedlička, Karolína&nbsp;Vintrová, Miloslav&nbsp;Chytil, Theodor&nbsp;Hozák,
-            Natália&nbsp;Krišťáková
+            {{ t('credits.exhibiting_names') }}
           </div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">PRODUCTION</div>
+          <div class="position">{{ t('credits.production') }}</div>
           <img src="svgs/symbol4.svg" class="credits_symbol" />
-          <div class="names">Michaela&nbsp;Kaplánková</div>
+          <div class="names">{{ t('credits.production_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">GRAPHIC DESIGN</div>
+          <div class="position">{{ t('credits.graphic_design') }}</div>
           <img src="svgs/symbol5.svg" class="credits_symbol" />
-          <div class="names">Oskar&nbsp;Koutný, Kateřina&nbsp;Pravdová</div>
+          <div class="names">{{ t('credits.graphic_design_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">WEB DEVELOPMENT</div>
+          <div class="position">{{ t('credits.web') }}</div>
           <img src="svgs/symbol6.svg" class="credits_symbol" />
-          <div class="names">Alžběta&nbsp;Volhejnová</div>
+          <div class="names">{{ t('credits.web_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">TEXTS</div>
+          <div class="position">{{ t('credits.texts') }}</div>
           <img src="svgs/symbol7.svg" class="credits_symbol" />
-          <div class="names">Vít&nbsp;Novák, Zuzana&nbsp;Řičářová</div>
+          <div class="names">{{ t('credits.texts_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">ANIMATION</div>
+          <div class="position">{{ t('credits.animation') }}</div>
           <img src="svgs/symbol8.svg" class="credits_symbol" />
-          <div class="names">
-            Alžběta&nbsp;Horňáková, Jakub&nbsp;Žanony, Klára&nbsp;Vlachová, Natálie&nbsp;Portíková
-          </div>
+          <div class="names">{{ t('credits.animation_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">MUSIC AND SOUND DESIGN</div>
+          <div class="position">{{ t('credits.music') }}</div>
           <img src="svgs/symbol9.svg" class="credits_symbol" />
-          <div class="names">Sára&nbsp;Vondrášková, Sarah&nbsp;Jedličková</div>
+          <div class="names">{{ t('credits.music_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">TECHNICAL SUPPORT</div>
+          <div class="position">{{ t('credits.technical') }}</div>
           <img src="svgs/symbol10.svg" class="credits_symbol" />
-          <div class="names">Karim&nbsp;Tarakji, Štěpán&nbsp;Kovář, Matyáš&nbsp;Černý</div>
+          <div class="names">{{ t('credits.technical_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">RECORDING STUDIO</div>
+          <div class="position">{{ t('credits.recording') }}</div>
           <img src="svgs/symbol11.svg" class="credits_symbol" />
-          <div class="names">Soundsquare</div>
+          <div class="names">{{ t('credits.recording_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">EQUIPMENT</div>
+          <div class="position">{{ t('credits.equipment') }}</div>
           <img src="svgs/symbol12.svg" class="credits_symbol" />
-          <div class="names">Quix</div>
+          <div class="names">{{ t('credits.equipment_names') }}</div>
         </section>
         <section class="flexbox_row credits_part">
-          <div class="position">PARTNER</div>
+          <div class="position">{{ t('credits.partner') }}</div>
           <img src="svgs/symbol13.svg" class="credits_symbol" />
-          <div class="names">Faculty of Education of Charles University</div>
+          <div class="names">{{ t('credits.partner_names') }}</div>
         </section>
       </section>
     </section>

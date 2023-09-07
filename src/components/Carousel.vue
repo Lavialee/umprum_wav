@@ -5,7 +5,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
 </script>
 
 <template>
-  <section id="performances">
+  <section id="milano">
     <div id="gradient2"></div>
     <section class="flexbox_column space_between topmargin96">
       <header class="header_bold_monument">

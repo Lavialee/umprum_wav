@@ -43,6 +43,29 @@ text-decoration: underline;
   font-size: 24px;
 }
 
+.body{
+  font-size: 13px;
+}
+
+.perex{
+  font-size: 18px;
+}
+
+.h1{
+  font-size: 48px;
+  text-transform: capitalize;
+}
+
+.h2{
+  font-size: 36;
+}
+.h3, .h3_bold{
+  font-size: 20;
+}
+
+.h3_bold{
+  font-weight: bold;
+}
 .header_bold_monument{
   font-weight: bold;
   font-size: 36px;
@@ -706,7 +729,7 @@ text-decoration: underline;
     align-items: flex-start;
     width: 100%;
     padding: 0;
-    margin: -25% 0px 0 0; 
+    margin: 0 0px 0 0; 
     
   }
   #first_header>div{

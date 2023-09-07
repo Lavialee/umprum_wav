@@ -10,7 +10,7 @@ import Melodize from './components/Melodize.vue'
 import Socials from './components/Socials.vue'
 import Credits from './components/Credits.vue'
 import Footer from './components/Footer.vue'
-// @ts-ignore
+const value = 1 // @ts-ignore
 import { useI18n } from 'vue-i18n'
 
 const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` returning
@@ -18,20 +18,13 @@ const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread 
 
 <template>
   <Navigation />
-  <div class="locale-changer">
-    <select v-model="locale">
-      <option v-for="locale in availableLocales" :key="`locale-${locale}`" :value="locale">
-        {{ locale }}
-      </option>
-    </select>
-  </div>
   <Landing />
   <Explore />
   <Carousel />
   <About_wav />
   <Instruments />
   <About_umprum />
-  <Melodize />
+  <Melodize v-if="locale === 'en'" />
   <Socials />
   <Credits />
   <Footer />

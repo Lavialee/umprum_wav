@@ -23,7 +23,14 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">Monochord<!--Instrument name--></header>
             <div class="author">[&nbsp;IVO JEDLIČKA&nbsp;]<!--author--></div>
-            <a href="https://www.instagram.com/jedl_ivo/" class="instagram">@jedl_ivo</a>
+            <a
+              href="https://www.instagram.com/jedl_ivo/"
+              class="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @jedl_ivo
+            </a>
             <article>{{ t('instruments.ivo_monochord') }}</article>
           </div>
           <img src="photos/monochord.jpg" alt="monochord" class="instrument_photo" />
@@ -32,7 +39,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
-        <!--<section class="flexbox_column space_between" style="width: 80%; gap: 64px;">one instrument-->
         <section class="flexbox_row space_between">
           <img src="svgs/target.svg" class="coda_phone" /><img
             src="svgs/target.svg"
@@ -40,12 +46,17 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           />
         </section>
         <main class="flexbox_instruments_left">
-          <!--flexbox row<main class="flexbox_row space_between" style="align-items: start;">-->
           <img src="photos/1000x600.jpg" alt="monochord" class="instrument_photo" />
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">1000x600<!--Instrument name--></header>
             <div class="author">[&nbsp;NATÁLIA KRIŠŤÁKOVÁ&nbsp;]<!--author--></div>
-            <a href="https://www.instagram.com/uhm.nnn/" class="instagram">@uhm.nnn<!--author--></a>
+            <a
+              href="https://www.instagram.com/uhm.nnn/"
+              class="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@uhm.nnn<!--author--></a
+            >
             <article>{{ t('instruments.natalia_numbers') }}</article>
           </div>
         </main>
@@ -53,7 +64,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
-        <!--<section class="flexbox_column space_between" style="width: 80%; gap: 64px;">one instrument-->
         <section class="flexbox_row space_between">
           <img src="svgs/target.svg" class="coda_phone" /><img
             src="svgs/target.svg"
@@ -61,11 +71,14 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           />
         </section>
         <main class="flexbox_instruments_right">
-          <!--flexbox row<main class="flexbox_row space_between" style="align-items: start;">-->
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">Didj<!--Instrument name--></header>
             <div class="author">[&nbsp;KAROLÍNA VINTROVÁ&nbsp;]<!--author--></div>
-            <a href="https://www.instagram.com/vintrovakarolina/" class="instagram"
+            <a
+              href="https://www.instagram.com/vintrovakarolina/"
+              class="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
               >@vintrovakarolina<!--author--></a
             >
             <article>{{ t('instruments.karolina_didj') }}</article>
@@ -76,7 +89,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
-        <!--<section class="flexbox_column space_between" style="width: 80%; gap: 64px;">one instrument-->
         <section class="flexbox_row space_between">
           <img src="svgs/target.svg" class="coda_phone" /><img
             src="svgs/target.svg"
@@ -84,12 +96,17 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           />
         </section>
         <main class="flexbox_instruments_left">
-          <!--flexbox row<main class="flexbox_row space_between" style="align-items: start;">-->
           <img src="photos/organ.jpg" alt="monochord" class="instrument_photo" />
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">Organ<!--Instrument name--></header>
             <div class="author">[&nbsp;MILOSLAV CHYTIL&nbsp;]<!--author--></div>
-            <a href="https://www.instagram.com/harxmar/" class="instagram">@harxmar<!--author--></a>
+            <a
+              href="https://www.instagram.com/harxmar/"
+              class="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+              >@harxmar<!--author--></a
+            >
             <article>{{ t('instruments.miroslav_organ') }}</article>
           </div>
         </main>
@@ -97,7 +114,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
-        <!--<section class="flexbox_column space_between" style="width: 80%; gap: 64px;">one instrument-->
         <section class="flexbox_row space_between">
           <img src="svgs/target.svg" class="coda_phone" /><img
             src="svgs/target.svg"
@@ -105,11 +121,14 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           />
         </section>
         <main class="flexbox_instruments_right">
-          <!--flexbox row<main class="flexbox_row space_between" style="align-items: start;">-->
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">Mora<!--Instrument name--></header>
             <div class="author">[&nbsp;THEODOR HOZÁK&nbsp;]<!--author--></div>
-            <a href="https://www.instagram.com/t.h.e.o.d.o.r.h/" class="instagram"
+            <a
+              href="https://www.instagram.com/t.h.e.o.d.o.r.h/"
+              class="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
               >@t.h.e.o.d.o.r.h<!--author--></a
             >
             <article>
@@ -122,7 +141,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
-        <!--<section class="flexbox_column space_between" style="width: 80%; gap: 64px;">one instrument-->
         <section
           class="flexbox_row space_between"
           style="align-items: flex-start; margin-top: 20px"
