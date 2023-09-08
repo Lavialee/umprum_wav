@@ -74,19 +74,11 @@ a:hover {
   font-size: 20px;
 }
 
-.txt20 {
-  font-size: 20px;
-}
-
 .bold {
   font-weight: bold;
 }
 
 .centered {
-  text-align: center;
-}
-
-.center {
   text-align: center;
 }
 
@@ -96,10 +88,24 @@ a:hover {
   text-align: center;
 }
 
-/*FLEXBOX AND SPACING*/
-.top-level-margins {
-  width: 80%;
-  margin: 0% 10%;
+.center {
+  text-align: center;
+}
+
+.txt20 {
+  font-size: 20px;
+}
+
+.margin96 {
+  margin: 96px 0;
+}
+
+.topmargin96 {
+  margin-top: 90px;
+}
+
+.botpad96 {
+  padding-bottom: 90px;
 }
 
 .flexbox_row,
@@ -134,18 +140,6 @@ a:hover {
   justify-content: space-between;
 }
 
-.margin96 {
-  margin: 96px 0;
-}
-
-.topmargin96 {
-  margin-top: 90px;
-}
-
-.botpad96 {
-  padding-bottom: 90px;
-}
-
 .black_blob {
   color: white;
   background-color: #1F1F1F;
@@ -155,7 +149,6 @@ a:hover {
   text-align: center;
 }
 
-/*CREDITS*/
 .credits_symbol {
   margin: 0 10px;
 }
@@ -524,12 +517,21 @@ a:hover {
 #first_header {
   justify-content: space-between;
   flex-direction: row;
+  padding: 10px 5%;
+  width: 80%;
   max-width: 1200px;
 }
 
 #logo_perex {
+  justify-content: space-between;
   align-items: start;
+  padding: 10px 10%;
+  width: 100%;
   max-width: 1200px;
+}
+
+#first_perex {
+  font-size: 18px;
 }
 
 #logo {
@@ -550,8 +552,7 @@ a:hover {
   align-self: center;
   text-align: center;
   width: 50%;
-  padding: 5px 20px;
-  max-width: fit-content;
+  padding: 10px 30px;
   border-style: solid;
   border-width: 1px;
 }
@@ -988,7 +989,7 @@ a:hover {
     flex-flow: row wrap;
   }
 
-  .only-pc {
+  .only_pc {
     display: none;
   }
 
