@@ -47,6 +47,10 @@ a:hover {
   text-decoration: underline;
 }
 
+.only_phone {
+  display: none;
+}
+
 /*TEXT RELATED*/
 .dots {
   font-family: "Dots";
@@ -68,15 +72,13 @@ a:hover {
 
 .h2 {
   font-size: 36px;
+  font-weight: bold;
 }
 
 .h3 {
   font-size: 20px;
 }
 
-.bold {
-  font-weight: bold;
-}
 
 .centered {
   text-align: center;
@@ -140,13 +142,22 @@ a:hover {
   justify-content: space-between;
 }
 
+.width_phone {
+  width: 100%;
+}
+
 .black_blob {
   color: white;
   background-color: #1F1F1F;
-  padding: 21px 30%;
+  padding: 21px 38%;
   border-radius: 97px;
   margin-top: 32px;
   text-align: center;
+
+}
+
+.edges {
+  width: 80%;
 }
 
 .credits_symbol {
@@ -228,6 +239,7 @@ a:hover {
 #catchphrase_melodize {
   text-align: center;
   font-weight: bold;
+  text-transform: uppercase;
   font-size: 20px;
 }
 
@@ -241,6 +253,7 @@ a:hover {
   text-align: center;
   margin-bottom: 64px;
   max-width: 700px;
+  text-transform: uppercase;
 }
 
 #about_melodize {
@@ -319,6 +332,15 @@ a:hover {
   width: 80%;
 }
 
+.instrument_credit_bold {
+  font-weight: bold
+}
+
+.instrument_credit,
+.instrument_credit_bold {
+  font-size: 18px;
+}
+
 #instruments {
   background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 11.98%, rgba(242, 242, 242, 0) 86.98%, #F54029 100%);
 }
@@ -327,7 +349,7 @@ a:hover {
 #wav_text,
 #wav_text2 {
   clear: both;
-  font-size: 12px;
+  font-size: 13px;
   margin-left: 20%;
   margin-bottom: 20px;
   margin-right: 10px;
@@ -346,7 +368,8 @@ a:hover {
 #wav_perex {
   font-size: 18px;
   max-width: 900px;
-  padding: 10px;
+  margin-left: 10%;
+  margin-top: 100px;
 }
 
 #repetice,
@@ -361,8 +384,6 @@ a:hover {
 
 #about_wav {
   text-align: left;
-  width: 40%;
-  white-space: nowrap;
   padding-left: 10%;
 }
 
@@ -379,7 +400,6 @@ a:hover {
 }
 
 #wav_project {
-  border: 2px solid;
   padding: 24px 0px;
   margin-top: 0;
 }
@@ -472,7 +492,7 @@ a:hover {
 }
 
 /* SECOND PAGE */
-#bg-grad-explore {
+.bg-grad-explore {
   background: linear-gradient(180deg, #16452E 0%, #FFA7D1 59.9%, rgba(255, 255, 255, 0) 99.48%);
 }
 
@@ -511,21 +531,19 @@ a:hover {
   height: calc(100vh - 58px);
   flex-flow: wrap;
   justify-content: center;
-  align-items: stretch;
 }
 
 #first_header {
   justify-content: space-between;
   flex-direction: row;
-  padding: 10px 5%;
-  width: 80%;
+  width: 100%;
   max-width: 1200px;
+  font-size: 14px;
 }
 
 #logo_perex {
   justify-content: space-between;
   align-items: start;
-  padding: 10px 10%;
   width: 100%;
   max-width: 1200px;
 }
@@ -552,13 +570,13 @@ a:hover {
   align-self: center;
   text-align: center;
   width: 50%;
-  padding: 10px 30px;
+  max-width: fit-content;
+  padding: 10px 10px;
   border-style: solid;
   border-width: 1px;
 }
 
 #second_perex {
-  font-size: 18px;
   width: 60%;
   text-align: center;
   align-self: center;
@@ -683,6 +701,40 @@ a:hover {
 /* NAVIGACE KONEC */
 
 @media (max-width: 700px) {
+  #gradient5 {
+    height: 40px;
+    width: 100%;
+  }
+
+  .dots {
+    font-family: "Dots";
+    font-size: 16px;
+  }
+
+  .body {
+    font-size: 11px;
+  }
+
+  .perex {
+    font-size: 12px;
+  }
+
+  .h1 {
+    font-size: 48px;
+    text-transform: capitalize;
+  }
+
+  .h2 {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: initial;
+    line-height: 1.5
+  }
+
+  .h3 {
+    font-size: 17px;
+  }
+
   .credits_symbol {
     margin: 5px 100px;
   }
@@ -707,9 +759,9 @@ a:hover {
   }
 
   .melodize_text {
-    padding: 0 7.5%;
-    font-size: 12px;
-    text-align: center;
+    padding: 0 5%;
+    font-size: 11px;
+    text-align: left;
   }
 
   #info_melodize {
@@ -719,48 +771,59 @@ a:hover {
 
   #info_header {
     font-size: 14px;
-    margin-top: 64px;
-    padding: 0 7.5%;
-    text-align: center;
+    margin-top: 24px;
+    padding: 0 5%;
+    text-align: left;
+    font-weight: bold;
+
   }
 
   #catchphrase_melodize {
     text-align: center;
-    font-weight: bold;
-    font-size: 16px;
+    font-weight: normal;
+    font-size: 11px;
     padding: 0 20px;
+    margin-bottom: 10px;
   }
 
   #perex2_melodize {
     text-align: center;
-    margin-bottom: 32px;
-    font-size: 13px;
-    padding: 0 7.5%;
+    margin-bottom: 0px;
+    margin-top: -15px;
+    font-size: 11px;
+    padding: 0 5%;
+    text-transform: none
+  }
+
+  .phone_bold {
+    font-weight: bold;
   }
 
   #perex_melodize {
-    font-size: 16px;
+    font-size: 11px;
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 32px;
     padding: 0 5%;
+    text-transform: none;
   }
 
   #about_melodize {
     font-size: 26px;
     text-align: center;
     margin-bottom: 64px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-transform: none;
 
   }
 
   #about_UMPRUM {
     font-size: 26px;
-    width: 85%;
+    width: 90%;
     text-align: left;
     margin-top: -5px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 5%;
+    margin-right: 5%;
 
   }
 
@@ -768,13 +831,13 @@ a:hover {
     font-size: 13px;
     width: 100%;
 
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 64px;
   }
 
   .one_instrument_section {
-    width: 85%;
+    width: 90%;
     gap: 0px;
   }
 
@@ -792,21 +855,22 @@ a:hover {
     margin-bottom: -20px;
     width: 100%;
     text-align: left;
+    font-size: 11px;
   }
 
   .instrument_name {
-    font-size: 26px;
+    font-size: 17px;
     margin-top: 10px;
   }
 
   .author {
-    font-size: 16px;
+    font-size: 11px;
     margin-bottom: 4px;
   }
 
   .instagram {
-    font-size: 14px;
-    margin-bottom: 44px;
+    font-size: 11px;
+    margin-bottom: 30px;
   }
 
   .instrument_photo {
@@ -815,10 +879,24 @@ a:hover {
   }
 
   #instruments_header {
-    font-size: 26px;
+    font-size: 24px;
     width: 100%;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .instrument_credit_bold {
+    font-weight: bold
+  }
+
+  .instrument_credit,
+  .instrument_credit_bold {
+    font-size: 11px;
+  }
+
+  .instrument_credit {
+    margin-bottom: 20px;
+    max-width: 570px
   }
 
   #instruments {
@@ -828,9 +906,9 @@ a:hover {
   #wav_text,
   #wav_text2 {
     clear: both;
-    font-size: 13px;
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    font-size: 11px;
+    margin-left: 5%;
+    margin-right: 5%;
     margin-bottom: 20px;
     max-width: 750px;
   }
@@ -842,15 +920,26 @@ a:hover {
   #whole_photo {
     float: none;
     width: 120%;
+    margin: 0px 0;
+    margin-bottom: 20px;
   }
 
   .black_blob {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
+    width: 20vw;
+    height: 9px;
+    border-radius: 97px;
+    line-height: 9px;
+  }
+
+
+  .edges {
+    width: 90%;
   }
 
   #experiment_with_the_sound {
-    margin-top: 100px;
+    margin-top: 30px;
   }
 
   #follow_our_shows {
@@ -863,12 +952,11 @@ a:hover {
   }
 
   #wav_perex {
-    font-size: 14px;
+    font-size: 11px;
     max-width: 900px;
     margin: 0;
     padding: 0;
-    margin-left: 8%;
-    margin-right: 7.5%;
+    margin: 20px 5%;
   }
 
   #repetice,
@@ -877,7 +965,8 @@ a:hover {
   }
 
   #about_wav {
-    margin-left: 7.5%;
+    margin: 0 5%;
+    width: 90%;
     padding: 0;
   }
 
@@ -959,11 +1048,11 @@ a:hover {
   }
 
   .txt20 {
-    font-size: 14px;
+    font-size: 11px;
   }
 
   .margin96 {
-    margin: 50px 0;
+    margin: 40px 0;
   }
 
   .topmargin96 {
@@ -978,10 +1067,10 @@ a:hover {
   #landing {
     display: flex;
     align-items: start;
-    margin: 0 7.5%;
+    margin: 0 5%;
     flex-flow: column;
-    justify-content: space-evenly;
-    width: 85%;
+    justify-content: space-between;
+    width: 90%;
     height: calc(100svh-50px);
   }
 
@@ -993,8 +1082,12 @@ a:hover {
     display: none;
   }
 
-  .coda {
-    display: none;
+  .only_phone {
+    display: block;
+  }
+
+  .width_phone {
+    width: 75%;
   }
 
   .coda_phone {
@@ -1003,12 +1096,17 @@ a:hover {
     margin-top: 20px;
   }
 
-  #first_header {
-    font-size: 16px;
+  .coda_phone_small {
+    width: 25px;
+    margin-bottom: 30px;
+    margin-top: 20px;
+  }
 
-    justify-content: start;
-    align-items: flex-start;
-    width: 100%;
+  #first_header {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+
     padding: 0;
     margin: 0 0px 0 0;
 
@@ -1016,7 +1114,16 @@ a:hover {
 
   #first_header>div {
     padding-right: 0;
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
   }
+
+  #first_header>img {
+    padding-right: 0;
+
+  }
+
 
   #logo_perex {
     padding: 0;
@@ -1026,10 +1133,11 @@ a:hover {
   }
 
   #first_perex {
-    font-size: 14px;
     margin: 0;
     padding: 0;
     margin-bottom: 30px;
+
+    text-align: center;
   }
 
   #logo {
@@ -1045,31 +1153,30 @@ a:hover {
   }
 
   #adress {
-    text-align: left;
+    text-align: center;
     width: auto;
     padding: 10px 10px;
     align-self: self-start;
     margin: 0;
     margin-bottom: 30px;
-    font-size: 16px;
+    font-size: 12px;
 
   }
 
   #second_perex {
-    font-size: 14px;
     margin: 0;
     width: auto;
     text-align: left;
   }
 
   #arrows {
-    height: 0px;
+    height: 60px;
     margin-top: -15%;
     margin-left: 25%;
   }
 
   .dots {
-    font-size: 15px;
+    font-size: 11px;
     line-height: 1.4;
   }
 
@@ -1127,6 +1234,7 @@ a:hover {
   .menu>li {
     display: flex;
     justify-content: center;
+    overflow: hidden;
     margin: 0;
     width: 100%;
     color: black;

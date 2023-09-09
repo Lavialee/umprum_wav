@@ -16,7 +16,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
         </section>
         <section>
           <section id="perex2_melodize">
-            {{ t('melodize.perex_3_1') }} <br />{{ t('melodize.perex_3_2') }}
+           <span class="phone_bold"> {{ t('melodize.perex_3_1') }} </span><br />{{ t('melodize.perex_3_2') }}
           </section>
           <section id="catchphrase_melodize">{{ t('melodize.slogan') }}</section>
         </section>
@@ -32,7 +32,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           <div class="melodize_text" style="padding-top: 20px">{{ t('melodize.ec_text_2') }}</div>
         </div>
         <div>
-          <header id="info_header">{{ t('melodize.friendly') }}</header>
+          <header id="info_header" style="text-align: center;">{{ t('melodize.friendly') }}</header>
         </div>
       </section>
     </section>

@@ -8,9 +8,10 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
   <section id="milano">
     <div id="gradient2"></div>
     <section class="flexbox_column space_between topmargin96">
-      <header class="header_bold_monument">
+      <header class="h2 edges centered">
         <span class="only_pc">• </span>{{ t('carousel.header') }}<span class="only_pc"> •</span>
       </header>
+      <p class="txt20 centered edges">{{ t('carousel.perex_1') }}<br/>{{ t('carousel.perex_2') }}</p>
     </section>
   </section>
 </template>

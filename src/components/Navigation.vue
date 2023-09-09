@@ -25,6 +25,11 @@ const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread 
           </select>
         </div>
       </li>
+      <li>
+        <button size="sm" class="my-2 my-sm-0 btn-info" type="submit" onclick="i18n.locale = 'en'">
+          {{ $t('english') }}
+        </button>
+      </li>
     </ul>
   </nav>
 </template>

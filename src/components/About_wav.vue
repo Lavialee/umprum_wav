@@ -12,18 +12,14 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       <div id="gradient4"></div>
     </section>
     <!--about wav-->
-    <header class="flexbox_row space_between margin96" id="wav_project">
-      <!--gradient a .wav projekt-->
-      <header id="about_wav">{{ t('about_wav.header') }}</header>
-    </header>
+    <!--gradient a .wav projekt-->
+    <header id="about_wav" class="edges">{{ t('about_wav.header') }}</header>
     <main>
       <!--text-->
-      <section class="flexbox_row" id="logo_perex">
-        <!--Perex 1 + název-->
-        <p id="wav_perex">
-          {{ t('about_wav.perex') }}
-        </p>
-      </section>
+      <!--Perex 1 + název-->
+      <p id="wav_perex">
+        {{ t('about_wav.perex') }}
+      </p>
       <img src="photos/wav_all.jpg" alt=".wav instruments" id="whole_photo" class="margin96" />
       <div id="wav_text">
         {{ t('about_wav.text_1') }}

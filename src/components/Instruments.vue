@@ -141,21 +141,26 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
+        <div class="flexbox_row space_between">
+          <img src="svgs/target.svg" class="only_phone" />
+          <img src="svgs/target.svg" class="only_phone" />
+        </div>
+
         <section
           class="flexbox_row space_between"
           style="align-items: flex-start; margin-top: 20px"
         >
           <div>
-            <div style="font-weight: bold">{{ t('instruments.photography') }}</div>
-            <div style="margin-bottom: 20px">MARKÉTA SLANÁ, LUKÁŠ HLAVÍN</div>
-            <div style="font-weight: bold">{{ t('instruments.location') }}</div>
-            <div style="margin-bottom: 20px; max-width: 570px">
+            <div class="instrument_credit_bold">{{ t('instruments.photography') }}</div>
+            <div class="instrument_credit">MARKÉTA SLANÁ, LUKÁŠ HLAVÍN</div>
+            <div class="instrument_credit_bold">{{ t('instruments.location') }}</div>
+            <div class="instrument_credit">
               {{ t('instruments.location_credit') }}
             </div>
-            <div style="font-weight: bold">{{ t('instruments.architects') }}</div>
-            <div>0,5 STUDIO</div>
+            <div class="instrument_credit_bold">{{ t('instruments.architects') }}</div>
+            <div class="instrument_credit">0,5 STUDIO</div>
           </div>
-          <img src="svgs/target.svg" class="coda_phone" />
+          <img src="svgs/target.svg" class="only_pc" />
         </section>
       </section>
     </section>

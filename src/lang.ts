@@ -1,12 +1,12 @@
 export const messages = {
   en: {
     navigation: {
-      milan:'MILAN 2023',
-      about_wav:'ABOUT .WAV',
-      instruments:'INSTRUMENTS',
-      about_umprum:'UMPRUM',
-      links:'LINKS',
-      credits:'CREDITS'
+      milan: 'MILAN 2023',
+      about_wav: 'ABOUT .WAV',
+      instruments: 'INSTRUMENTS',
+      about_umprum: 'UMPRUM',
+      links: 'LINKS',
+      credits: 'CREDITS'
     },
     landing: {
       audiovisual: 'AUDIOVISUAL EXPERIENCE',
@@ -24,7 +24,9 @@ export const messages = {
       shows: 'FOLLOW OUR SHOWS'
     },
     carousel: {
-      header: 'TAKE A CLOSER LOOK'
+      header: 'TAKE A CLOSER LOOK',
+      perex_1: 'The installation was created as part of the Tortona Design Week 2023 in Milan.',
+      perex_2: 'Now you have a chance to visit it in Prague.'
     },
     about_wav: {
       header: '.WAV PROJECT',
@@ -63,11 +65,11 @@ export const messages = {
       header: 'ABOUT MELODIZE PROJECT',
       perex_1:
         'AS A PART OF UMPRUM.WAV INSTALLATION IN MILAN, THE MELODIZE PROJECT WAS PRESENTED FOR THE FIRST TIME.',
-      perex_2_1: 'CAN ANYONE BECOME CREATIVE?',
-      perex_2_2: 'MELODIZE HELPS TO REVEAL THE MAGIC OF MUSICAL CREATION',
+      perex_2_1: 'Can anyone become creative?',
+      perex_2_2: 'MELODIZE helps to reveal the magic of musical creation',
       perex_3_1: 'MELODIZE',
       perex_3_2: 'Intuitive educative music editor for Android & iOS:',
-      slogan: 'THE GAME - CREATIVITY - KNOWLEDGE',
+      slogan: 'The Game - Creativity - Knowledge',
       oecd_header: 'OECD',
       oecd_text:
         'Innovation is a key driver of economic growth, and music education is seen as a means of fostering the skills and attitudes that innovation requires. Music creation strengthens attention, emotional intelligence and creative abilities.',
@@ -121,12 +123,12 @@ export const messages = {
   },
   cs: {
     navigation: {
-      milan:'MILÁN 2023',
-      about_wav:'.WAV PROJEKT',
-      instruments:'NÁSTROJE',
-      about_umprum:'UMPRUM',
-      links:'ODKAZY',
-      credits:'CREDITS'
+      milan: 'MILÁN 2023',
+      about_wav: '.WAV PROJEKT',
+      instruments: 'NÁSTROJE',
+      about_umprum: 'UMPRUM',
+      links: 'ODKAZY',
+      credits: 'CREDITS'
     },
     landing: {
       audiovisual: 'AUDIOVISUAL EXPERIENCE',
@@ -140,11 +142,13 @@ export const messages = {
     },
     explore: {
       explore: 'EXPLORE THE AUDIOVISUAL',
-      experiment: 'EXPERIMENT WITH THE SOUND',
-      shows: 'FOLLOW OUR SHOWS'
+      experiment: 'EXPERIMENTUJ SE ZVUKEM',
+      shows: 'SLEDUJ NAŠE PERFORMANCE'
     },
     carousel: {
-      header: 'PROZKOUMEJTE ZBLÍZKA'
+      header: 'PROZKOUMEJTE ZBLÍZKA',
+      perex_1: ' Po uvedení na prestižním milánském design weeku',
+      perex_2: 'máte nyní jedinečnou příležitost zažít instalaci zde v Praze.'
     },
     about_wav: {
       header: '.WAV PROJEKT',
