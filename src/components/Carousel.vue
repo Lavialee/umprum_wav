@@ -45,9 +45,10 @@ const slides = [
         {{ t('carousel.perex_1') }}<br />{{ t('carousel.perex_2') }}
       </p>
     </section>
-    <div class="carousel">
+    <div class="carousel" >
       <vueper-slides
         class="no-shadow"
+        style="z-index: 1;"
         :visible-slides="1.5"
         arrowsOutside
         :dragging-distance="70"

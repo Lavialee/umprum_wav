@@ -224,6 +224,7 @@ a:hover {
 .names {
   text-align: left;
   width: 40%;
+  font-size: 11px;
 }
 
 .position {
@@ -297,8 +298,7 @@ a:hover {
 /* SIXTH PAGE */
 #about_UMPRUM {
   font-size: 48px;
-  width: 50%;
-  text-align: right;
+  text-align: left;
   margin-top: -13px;
 }
 
@@ -308,6 +308,12 @@ a:hover {
   margin-bottom: 128px;
   max-width: 720px;
 
+}
+
+#umprum_flex {
+  margin: 0 10%;
+  gap: 20px;
+  align-items: flex-start
 }
 
 /* FIFTH PAGE */
@@ -566,10 +572,7 @@ a:hover {
   flex-flow: wrap;
   justify-content: center;
 
-  background: -o-radial-gradient(var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
-  background: radial-gradient(var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
-  background-size: cover;
-  z-index: -3;
+
 
   transition: --c1 0.1s ease-out, --c2 0.1s ease-out, --c3 0.1s ease-out;
   -moz-transition: --c1 0.1s ease-out, --c2 0.1s ease-out, --c3 0.1s ease-out;
@@ -579,199 +582,22 @@ a:hover {
   padding-top: 50px;
 }
 
-
-@-webkit-keyframes anim {
-  from {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-
-  20% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  30% {
-    --c2: rgb(245, 64, 41);
-  }
-
-  40% {
-    --c1: rgb(245, 64, 41);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  45% {
-    --c4: rgb(255, 167, 209);
-
-  }
-
-  50% {
-    --c1: rgb(255, 167, 209);
-    --c2: rgb(242, 242, 242);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  80% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(225, 225, 0);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  90% {
-    --c1: rgb(242, 242, 242);
-    --c3: rgb(225, 225, 0);
-  }
-
-  to {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
+#background {
+  width: 100%;
+  height: calc(100vh - 58px);
+  position: absolute;
+  z-index: -3;
 }
 
-@-moz-keyframes anim {
-  from {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
+#bg_gradient {
+  width: 100%;
+  height: calc(100vh - 58px);
 
-  20% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
+  background: -o-radial-gradient(circle at center, var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
+  background: radial-gradient(circle at center, var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
 
-  30% {
-    --c2: rgb(245, 64, 41);
-  }
-
-  40% {
-    --c1: rgb(245, 64, 41);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  45% {
-    --c4: rgb(255, 167, 209);
-
-  }
-
-  50% {
-    --c1: rgb(255, 167, 209);
-    --c2: rgb(242, 242, 242);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  80% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(225, 225, 0);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  90% {
-    --c1: rgb(242, 242, 242);
-    --c3: rgb(225, 225, 0);
-  }
-
-  to {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
 }
 
-@keyframes anim {
-  from {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-
-  20% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  30% {
-
-    --c2: rgb(245, 64, 41);
-  }
-
-  40% {
-    --c1: rgb(245, 64, 41);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  45% {
-    --c4: rgb(255, 167, 209);
-
-  }
-
-  50% {
-    --c1: rgb(255, 167, 209);
-    --c2: rgb(242, 242, 242);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  80% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(225, 225, 0);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  90% {
-    --c1: rgb(242, 242, 242);
-    --c3: rgb(225, 225, 0);
-  }
-
-  to {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-}
 
 #first_header {
   justify-content: space-between;
@@ -812,8 +638,10 @@ a:hover {
   width: 50%;
   max-width: fit-content;
   padding: 10px 10px;
+  margin: 0;
   border-style: solid;
   border-width: 1px;
+
 }
 
 #second_perex {
@@ -832,6 +660,33 @@ a:hover {
   text-decoration: none;
   display: inline-block;
   font-size: 13px;
+  transition-duration: 0.1s;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.bot_nav {
+  height: 10px;
+  position: fixed;
+  bottom: 100px;
+  right: 60px
+}
+
+.bot_nav>a {
+  width: 80px;
+  height: 80px;
+  display: block;
+  padding: 0
+}
+
+.bot_nav>a>img {
+  width: 80px;
+  height: 80px;
+  z-index: 1000;
+  position: absolute
 }
 
 /* arrows */
@@ -879,6 +734,15 @@ a:hover {
   width: 100%;
   box-sizing: border-box;
   font-size: 13px;
+}
+
+#bottom-nav {
+  background-image: url(svgs/to_top.svg);
+  display: block;
+  margin: 0 auto;
+  text-indent: -9999px;
+  width: 100px;
+  height: 100px;
 }
 
 .menu {
@@ -987,12 +851,14 @@ a:hover {
 
   .credits_symbol {
     margin: 5px 100px;
+    width: 15px;
   }
 
   .position {
     text-align: center;
     width: 100%;
     padding-top: 10px;
+    font-size: 11px;
   }
 
   .names {
@@ -1004,7 +870,7 @@ a:hover {
   #sponsors {
     display: block;
     width: 90%;
-    padding-bottom: 50px;
+    padding-bottom: 70px;
     content: url("svgs/sponzori_small.svg");
   }
 
@@ -1072,17 +938,12 @@ a:hover {
     width: 90%;
     text-align: left;
     margin-top: -5px;
-    margin-left: 5%;
-    margin-right: 5%;
 
   }
 
   #text_UMPRUM {
-    font-size: 13px;
+    font-size: 11px;
     width: 100%;
-
-    margin-left: 5%;
-    margin-right: 5%;
     margin-bottom: 64px;
   }
 
@@ -1208,6 +1069,27 @@ a:hover {
     padding-bottom: 0px
   }
 
+  .bot_nav {
+    height: 10px;
+    position: fixed;
+    bottom: 70px;
+    right: 15px;
+  }
+
+  .bot_nav>a {
+    width: 70px;
+    height: 70px;
+    display: block;
+    padding: 0
+  }
+
+  .bot_nav>a>img {
+    width: 70px;
+    height: 70px;
+    z-index: 1000;
+    position: absolute
+  }
+
   .edges {
     width: 90%;
   }
@@ -1251,6 +1133,12 @@ a:hover {
 
   #jam_sessions {
     margin: 0;
+  }
+
+  #umprum_flex {
+    margin: 0 5%;
+    gap: 20px;
+    align-items: flex-start
   }
 
   .parent {
@@ -1346,8 +1234,7 @@ a:hover {
     display: flex;
     align-items: center;
     padding: 0 5%;
-    padding-top: 60px;
-    margin-top: -60px;
+    padding-top: 65px;
     flex-flow: column;
     justify-content: space-between;
     width: 100%;
@@ -1386,7 +1273,7 @@ a:hover {
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-
+    font-size: 14px;
     padding: 0;
     margin: 0 0px 0 0;
 
@@ -1446,12 +1333,10 @@ a:hover {
   #second_perex {
     margin: 0;
     width: auto;
-    text-align: left;
   }
 
   #arrows {
     height: 60px;
-    margin-top: -15%;
   }
 
 
@@ -1460,13 +1345,7 @@ a:hover {
     line-height: 1.4;
   }
 
-  #background {
-    background-position: center;
-    min-height: 100vw;
-    min-width: 100vh;
-    height: 100%;
-    width: 100%;
-  }
+  #background {}
 
   /* NAVIGACE */
   .top-nav {
@@ -1479,7 +1358,8 @@ a:hover {
   .menu-button-container {
     display: flex;
     position: fixed;
-    margin: 10px;
+    margin: 18px;
+    margin-top: 50px;
   }
 
   .menu {

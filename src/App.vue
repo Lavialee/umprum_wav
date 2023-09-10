@@ -17,6 +17,9 @@ const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread 
 </script>
 
 <template>
+  <div id="background">
+    <div id="bg_gradient"></div>
+  </div>
   <Navigation />
   <Landing />
   <Explore />

@@ -36,13 +36,14 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
           {{ t('landing.perex_2') }}
         </p>
       </section>
-    </section>
-    <!--arrows-->
-    <section id="arrows">
+      <section id="arrows">
       <a href="#explore"
         ><span class="arrow down-narrow"></span><span class="arrow down-narrow"></span
         ><span class="arrow down-narrow"></span
       ></a>
     </section>
+    </section>
+    <!--arrows-->
+    
   </section>
 </template>
