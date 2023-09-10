@@ -8,12 +8,28 @@ import 'vueperslides/dist/vueperslides.css'
 
 const slides = [
   {
-    title: 'Slide #1',
-    content: 'Slide 1 content.'
+    image: 'public/photos/milano1.jpg'
   },
   {
-    title: 'Slide #2',
-    content: 'Slide 2 content.'
+    image: 'public/photos/milano2.jpg'
+  },
+  {
+    image: 'public/photos/milano3.jpg'
+  },
+  {
+    image: 'public/photos/milano4.jpg'
+  },
+  {
+    image: 'public/photos/milano5.jpg'
+  },
+  {
+    image: 'public/photos/milano6.jpg'
+  },
+  {
+    image: 'public/photos/milano7.jpg'
+  },
+  {
+    image: 'public/photos/milano8.jpg'
   }
 ]
 </script>
@@ -29,7 +45,7 @@ const slides = [
         {{ t('carousel.perex_1') }}<br />{{ t('carousel.perex_2') }}
       </p>
     </section>
-    <div style="margin: 0 10%">
+    <div class="carousel">
       <vueper-slides
         class="no-shadow"
         :visible-slides="1.5"
@@ -37,8 +53,12 @@ const slides = [
         :dragging-distance="70"
         prevent-y-scroll
         :gap="3"
-        :slide-ratio="1 / 3"
-        :breakpoints="{ 800: { visibleSlides: 1, slideMultiple: 2 } }"
+        :slide-ratio="1 / 2"
+        :infinite="true"
+        :bullets="false"
+        :breakpoints="{
+          800: { visibleSlides: 1, slideMultiple: 2, slideRatio: 1 / 1.5, bullets: true }
+        }"
       >
         <template #arrow-left>
           <img class="coda_rotate" src="svgs/icon3.svg" style="padding-left: 1px" />
@@ -47,7 +67,12 @@ const slides = [
         <template #arrow-right>
           <img class="coda" src="svgs/icon3.svg" />
         </template>
-        <vueper-slide v-for="i in 10" :key="i" :title="i.toString()" style="border-radius: 24px" />
+        <vueper-slide
+          v-for="(slide, i) in slides"
+          :key="i"
+          :image="slide.image"
+          style="border-radius: 24px"
+        />
       </vueper-slides>
     </div>
   </section>

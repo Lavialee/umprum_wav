@@ -521,6 +521,9 @@ a:hover {
   background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
 }
 
+.carousel {
+  margin: 0 10%
+}
 
 /* SECOND PAGE */
 .bg-grad-explore {
@@ -775,7 +778,7 @@ a:hover {
   flex-direction: row;
   width: 100%;
   max-width: 1200px;
-  font-size: 14px;
+  font-size: 24px;
 }
 
 #logo_perex {
@@ -1321,6 +1324,10 @@ a:hover {
 
   .botpad96 {
     padding-bottom: 50px;
+  }
+
+  .carousel {
+    margin: 0 5%
   }
 
   /* FIRST PAGE */

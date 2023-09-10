@@ -27,13 +27,15 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       <img src="svgs/umprumwav.svg" id="logo" />
     </section>
     <!--adresa + Perex 2-->
-    <p id="adress">
-      {{ t('landing.adress') }}
-    </p>
-    <section class="perex" id="adress_perex">
-      <p class="perex" id="second_perex">
-        {{ t('landing.perex_2') }}
+    <section class="flexbox_column">
+      <p id="adress">
+        {{ t('landing.adress') }}
       </p>
+      <section class="perex" id="adress_perex">
+        <p class="perex" id="second_perex">
+          {{ t('landing.perex_2') }}
+        </p>
+      </section>
     </section>
     <!--arrows-->
     <section id="arrows">
