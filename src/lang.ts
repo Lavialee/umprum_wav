@@ -112,7 +112,7 @@ export const messages = {
       music: 'MUSIC AND SOUND DESIGN',
       music_names: 'Sára\xa0Vondrášková, Sarah\xa0Jedličková',
       technical: 'TECHNICAL SUPPORT',
-      technical_names: 'Karim\xa0Tarakji, Štěpán\xa0Kovář, Matyáš\xa0Černý</div>',
+      technical_names: 'Karim\xa0Tarakji, Štěpán\xa0Kovář, Matyáš\xa0Černý',
       recording: 'RECORDING STUDIO',
       recording_names: 'Soundsquare',
       equipment: 'EQUIPMENT',

@@ -200,7 +200,6 @@ a:hover {
   background-color: #1F1F1F;
   padding: 21px 20px;
   border-radius: 97px;
-  margin-top: 32px;
   text-align: center;
 }
 
@@ -223,6 +222,15 @@ a:hover {
   height: 32px;
   background: linear-gradient(180deg, #16452E 0%, #F54029 14.06%, rgba(242, 242, 242, 0) 100%);
   ;
+}
+
+.coda {
+  padding-left: 0px;
+  padding-top: 0px
+}
+
+.coda_rotate {
+  transform: rotate(180deg);
 }
 
 /*SEVENTH PAGE*/
@@ -583,18 +591,130 @@ a:hover {
 }
 
 #background {
+
   position: absolute;
   left: 0px;
   top: 0px;
-  background-image: url(svgs/background.svg);
+
+  transition: --c1 0.1s;
+  transition: --c2 0.1s;
+  transition: --c3 0.1s;
+
+  background: radial-gradient(var(--c1) 15%, var(--c2) 25%,
+      var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
+  animation: c1 30s ease-in-out infinite normal;
+
+
+
   height: 100%;
   width: 100%;
   background-position: center;
-
-
   background-size: cover;
   z-index: -3;
 }
+
+/*yellow rgb(225,225,0)  */
+@property --c1 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(225, 225, 0);
+}
+
+/*GREY  rgb(199,199,198)  */
+@property --c2 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(199, 199, 198);
+}
+
+/*yellow rgb(225,225,0)  */
+@property --c3 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(225, 225, 0);
+}
+
+/*PINK rgb(255,167,209)  */
+@property --c4 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(255, 167, 209);
+}
+
+/*LIGHT GREY rgb(242,242,242)  */
+@property --c5 {
+  syntax: '<color>';
+  inherits: false;
+  initial-value: rgb(242, 242, 242);
+}
+
+@keyframes c1 {
+  from {
+    --c1: rgb(225, 225, 0);
+
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+
+  20% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  30% {
+
+    --c2: rgb(245, 64, 41);
+  }
+
+  40% {
+    --c1: rgb(245, 64, 41);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  45% {
+    --c4: rgb(255, 167, 209);
+
+  }
+
+  50% {
+    --c1: rgb(255, 167, 209);
+    --c2: rgb(242, 242, 242);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  80% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(225, 225, 0);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  90% {
+    --c1: rgb(242, 242, 242);
+    --c3: rgb(225, 225, 0);
+  }
+
+  to {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+}
+
+
 
 /* arrows */
 .arrow {
@@ -933,6 +1053,30 @@ a:hover {
     line-height: 9px;
   }
 
+  .black_blob_wide {
+    color: white;
+    width: 64%;
+    max-width: 900px;
+    background-color: #1F1F1F;
+    padding: 12px 20px;
+    border-radius: 97px;
+    margin-top: 0px;
+    text-align: center;
+  }
+
+  .coda {
+    padding-left: 0px;
+    padding-top: 0px;
+    width: 10%;
+  }
+
+  .coda_rotate {
+    transform: rotate(180deg);
+    width: 10%;
+
+    padding-right: 0px;
+    padding-bottom: 0px
+  }
 
   .edges {
     width: 90%;
