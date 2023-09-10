@@ -18,7 +18,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       </header>
       <div class="flexbox_column dots" style="width: 90%; align-self: center">
         <div class="flexbox_row space_between" style="width: 100%; align-items: center">
-          <img class="coda" src="svgs/icon1.svg" />
+          <img class="coda" src="/svgs/icon1.svg" />
           <a
             class="black_blob_wide"
             href="https://www.facebook.com/UMPRUM"
@@ -26,7 +26,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             rel="noopener noreferrer"
             >{{ t('socials.umprum') }}</a
           >
-          <img class="coda" src="svgs/icon1.svg" />
+          <img class="coda" src="/svgs/icon1.svg" />
         </div>
       </div>
       <header class="txt20" style="margin-top: 42px; margin-bottom: 12px">
@@ -34,7 +34,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       </header>
       <div class="flexbox_column dots" style="width: 90%; align-self: center">
         <div class="flexbox_row space_between" style="width: 100%; align-items: center; margin-bottom: 18px;">
-          <img class="coda" src="svgs/icon2.svg" />
+          <img class="coda" src="/svgs/icon2.svg" />
           <a
             class="black_blob_wide"
             href="https://www.instagram.com/d3_umprum"
@@ -42,10 +42,10 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             rel="noopener noreferrer"
             >{{ t('socials.product') }}</a
           >
-          <img class="coda" src="svgs/icon2.svg" />
+          <img class="coda" src="/svgs/icon2.svg" />
         </div>
         <div class="flexbox_row space_between" style="width: 100%; align-items: center; margin-bottom: 18px;">
-          <img class="coda" src="svgs/icon3.svg" />
+          <img class="coda" src="/svgs/icon3.svg" />
           <a
             class="black_blob_wide"
             href="https://www.instagram.com/atelier_notfound"
@@ -53,10 +53,10 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             rel="noopener noreferrer"
             >{{ t('socials.ddt') }}</a
           >
-          <img class="coda_rotate" src="svgs/icon3.svg" />
+          <img class="coda_rotate" src="/svgs/icon3.svg" />
         </div>
         <div class="flexbox_row space_between" style="width: 100%; align-items: center">
-          <img class="coda" src="svgs/icon4.svg" />
+          <img class="coda" src="/svgs/icon4.svg" />
           <a
             class="black_blob_wide"
             href="https://www.instagram.com/gdvk_umprum/"
@@ -64,7 +64,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             rel="noopener noreferrer"
             >{{ t('socials.gdvk') }}</a
           >
-          <img class="coda" src="svgs/icon4.svg" />
+          <img class="coda" src="/svgs/icon4.svg" />
         </div>
       </div>
     </section>

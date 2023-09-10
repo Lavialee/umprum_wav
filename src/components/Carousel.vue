@@ -3,7 +3,6 @@
 
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` returning
-import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 
 const slides = [
@@ -45,10 +44,10 @@ const slides = [
         {{ t('carousel.perex_1') }}<br />{{ t('carousel.perex_2') }}
       </p>
     </section>
-    <div class="carousel" >
+    <div class="carousel">
       <vueper-slides
         class="no-shadow"
-        style="z-index: 1;"
+        style="z-index: 1"
         :visible-slides="1.5"
         arrowsOutside
         :dragging-distance="70"
@@ -61,11 +60,11 @@ const slides = [
         }"
       >
         <template #arrow-left>
-          <img class="coda_rotate" src="svgs/icon3.svg" style="padding-left: 1px" />
+          <img class="coda_rotate" src="/svgs/icon3.svg" style="padding-left: 1px" />
         </template>
 
         <template #arrow-right>
-          <img class="coda" src="svgs/icon3.svg" />
+          <img class="coda" src="/svgs/icon3.svg" />
         </template>
         <vueper-slide
           v-for="(slide, i) in slides"

@@ -193,7 +193,7 @@ a:hover {
   display: block;
   width: 90%;
   padding-bottom: 4vw;
-  content: url("svgs/sponzori.svg");
+  content: url("/svgs/sponzori.svg");
   margin-left: auto;
   margin-right: auto;
   background-color: #FFFFFF
@@ -840,7 +840,7 @@ a:hover {
 }
 
 #bottom-nav {
-  background-image: url(svgs/to_top.svg);
+  background-image: url(/svgs/to_top.svg);
   display: block;
   margin: 0 auto;
   text-indent: -9999px;
@@ -974,7 +974,7 @@ a:hover {
     display: block;
     width: 90%;
     padding-bottom: 70px;
-    content: url("svgs/sponzori_small.svg");
+    content: url("/svgs/sponzori_small.svg");
   }
 
   .melodize_text {

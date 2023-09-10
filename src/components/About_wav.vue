@@ -20,7 +20,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       <p id="wav_perex">
         {{ t('about_wav.perex') }}
       </p>
-      <img src="photos/wav_all.jpg" alt=".wav instruments" id="whole_photo" class="margin96" />
+      <img src="/photos/wav_all.jpg" alt=".wav instruments" id="whole_photo" class="margin96" />
       <div id="wav_text">
         {{ t('about_wav.text_1') }}
       </div>

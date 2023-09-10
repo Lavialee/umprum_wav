@@ -14,8 +14,8 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <section class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="coda_phone" /><img
-            src="svgs/target.svg"
+          <img src="/svgs/target.svg" class="coda_phone" /><img
+            src="/svgs/target.svg"
             class="coda_phone"
           />
         </section>
@@ -33,20 +33,20 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             </a>
             <article>{{ t('instruments.ivo_monochord') }}</article>
           </div>
-          <img src="photos/monochord.jpg" alt="monochord" class="instrument_photo" />
+          <img src="/photos/monochord.jpg" alt="monochord" class="instrument_photo" />
         </main>
       </section>
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <section class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="coda_phone" /><img
-            src="svgs/target.svg"
+          <img src="/svgs/target.svg" class="coda_phone" /><img
+            src="/svgs/target.svg"
             class="coda_phone"
           />
         </section>
         <main class="flexbox_instruments_left">
-          <img src="photos/1000x600.jpg" alt="monochord" class="instrument_photo" />
+          <img src="/photos/1000x600.jpg" alt="monochord" class="instrument_photo" />
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">1000x600<!--Instrument name--></header>
             <div class="author">[&nbsp;NATÁLIA KRIŠŤÁKOVÁ&nbsp;]<!--author--></div>
@@ -65,8 +65,8 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <section class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="coda_phone" /><img
-            src="svgs/target.svg"
+          <img src="/svgs/target.svg" class="coda_phone" /><img
+            src="/svgs/target.svg"
             class="coda_phone"
           />
         </section>
@@ -83,20 +83,20 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             >
             <article>{{ t('instruments.karolina_didj') }}</article>
           </div>
-          <img src="photos/didj.jpg" alt="monochord" class="instrument_photo" />
+          <img src="/photos/didj.jpg" alt="monochord" class="instrument_photo" />
         </main>
       </section>
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <section class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="coda_phone" /><img
-            src="svgs/target.svg"
+          <img src="/svgs/target.svg" class="coda_phone" /><img
+            src="/svgs/target.svg"
             class="coda_phone"
           />
         </section>
         <main class="flexbox_instruments_left">
-          <img src="photos/organ.jpg" alt="monochord" class="instrument_photo" />
+          <img src="/photos/organ.jpg" alt="monochord" class="instrument_photo" />
           <div class="flexbox_column instrument_texts">
             <header class="instrument_name">Organ<!--Instrument name--></header>
             <div class="author">[&nbsp;MILOSLAV CHYTIL&nbsp;]<!--author--></div>
@@ -115,8 +115,8 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <section class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="coda_phone" /><img
-            src="svgs/target.svg"
+          <img src="/svgs/target.svg" class="coda_phone" /><img
+            src="/svgs/target.svg"
             class="coda_phone"
           />
         </section>
@@ -135,15 +135,15 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
               {{ t('instruments.theodor_mora') }}
             </article>
           </div>
-          <img src="photos/mora.jpg" alt="monochord" class="instrument_photo" />
+          <img src="/photos/mora.jpg" alt="monochord" class="instrument_photo" />
         </main>
       </section>
     </section>
     <section class="flexbox_row topmargin96" style="width: 100%; justify-content: center">
       <section class="one_instrument_section">
         <div class="flexbox_row space_between">
-          <img src="svgs/target.svg" class="only_phone" />
-          <img src="svgs/target.svg" class="only_phone" />
+          <img src="/svgs/target.svg" class="only_phone" />
+          <img src="/svgs/target.svg" class="only_phone" />
         </div>
 
         <section
@@ -160,7 +160,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             <div class="instrument_credit_bold">{{ t('instruments.architects') }}</div>
             <div class="instrument_credit">0,5 STUDIO</div>
           </div>
-          <img src="svgs/target.svg" class="only_pc" />
+          <img src="/svgs/target.svg" class="only_pc" />
         </section>
       </section>
     </section>

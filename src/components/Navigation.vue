@@ -44,6 +44,6 @@ const toggleLanguage = () => {
   </nav>
 
   <nav class="bot_nav">
-    <a href="#landing"><img src="svgs/to_top.svg" style="z-index: 100;"/></a>
+    <a href="#landing"><img src="/svgs/to_top.svg" style="z-index: 100;"/></a>
   </nav>
 </template>
