@@ -591,20 +591,20 @@ a:hover {
 }
 
 #background {
-
   position: absolute;
   left: 0px;
   top: 0px;
 
-  transition: --c1 0.1s;
-  transition: --c2 0.1s;
-  transition: --c3 0.1s;
+  transition: --c1 0.1s, --c2 0.1s, --c3 0.1s;
+
+  background: -o-radial-gradient(var(--c1) 15%, var(--c2) 25%,
+      var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
 
   background: radial-gradient(var(--c1) 15%, var(--c2) 25%,
       var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
+  -webkit-animation: c1 30s ease-in-out infinite normal;
   animation: c1 30s ease-in-out infinite normal;
-
-
+  -moz-animation: c1 30s ease-in-out infinite normal;
 
   height: 100%;
   width: 100%;
@@ -646,6 +646,72 @@ a:hover {
   syntax: '<color>';
   inherits: false;
   initial-value: rgb(242, 242, 242);
+}
+
+@-webkit-keyframes c1 {
+  from {
+    --c1: rgb(225, 225, 0);
+
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+
+  20% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  30% {
+
+    --c2: rgb(245, 64, 41);
+  }
+
+  40% {
+    --c1: rgb(245, 64, 41);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  45% {
+    --c4: rgb(255, 167, 209);
+
+  }
+
+  50% {
+    --c1: rgb(255, 167, 209);
+    --c2: rgb(242, 242, 242);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  80% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(225, 225, 0);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  90% {
+    --c1: rgb(242, 242, 242);
+    --c3: rgb(225, 225, 0);
+  }
+
+  to {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
 }
 
 @keyframes c1 {
