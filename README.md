@@ -1,3 +1,4 @@
+vue, vue i18n, [vueperslides](https://antoniandre.github.io/vueper-slides/)
 # umprum_wav_i18n
 Getting Started
 
