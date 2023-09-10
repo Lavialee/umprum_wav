@@ -54,7 +54,6 @@ const slides = [
         prevent-y-scroll
         :gap="3"
         :slide-ratio="1 / 2"
-        :infinite="true"
         :bullets="false"
         :breakpoints="{
           800: { visibleSlides: 1, slideMultiple: 2, slideRatio: 1 / 1.5, bullets: true }

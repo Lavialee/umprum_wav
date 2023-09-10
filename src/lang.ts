@@ -1,6 +1,8 @@
 export const messages = {
   en: {
     navigation: {
+      lang: 'CS',
+
       milan: 'MILAN 2023',
       about_wav: 'ABOUT .WAV',
       instruments: 'INSTRUMENTS',
@@ -123,6 +125,7 @@ export const messages = {
   },
   cs: {
     navigation: {
+      lang: 'EN',
       milan: 'MILÁN 2023',
       about_wav: '.WAV PROJEKT',
       instruments: 'NÁSTROJE',
