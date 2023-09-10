@@ -1,18 +1,18 @@
 @font-face {
   font-family: 'Dots';
-  src: url('fonts/DotsAllForNow.ttf') format('truetype');
+  src: url('/public/fonts/DotsAllForNow.ttf') format('truetype');
 }
 
 @font-face {
   font-family: "Monument";
   font-weight: normal;
-  src: url("fonts/PPMonumentExtended-Regular.ttf") format('truetype');
+  src: url("/public/fonts/PPMonumentExtended-Regular.ttf") format('truetype');
 }
 
 @font-face {
   font-family: "Monument";
   font-weight: bold;
-  src: url("fonts/PPMonumentExtended-Bold.ttf") format('truetype');
+  src: url("/public/fonts/PPMonumentExtended-Bold.ttf") format('truetype');
 }
 
 :root {
