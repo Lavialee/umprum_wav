@@ -594,7 +594,10 @@ a:hover {
   position: absolute;
   left: 0px;
   top: 0px;
-
+  min-height: 100vw;
+  min-width: 100vh;
+  height: 100%;
+  width: 100%;
   transition: --c1 0.1s, --c2 0.1s, --c3 0.1s;
 
   background: -o-radial-gradient(var(--c1) 15%, var(--c2) 25%,
@@ -606,8 +609,7 @@ a:hover {
   animation: c1 30s ease-in-out infinite normal;
   -moz-animation: c1 30s ease-in-out infinite normal;
 
-  height: 100%;
-  width: 100%;
+
   background-position: center;
   background-size: cover;
   z-index: -3;
@@ -1391,9 +1393,11 @@ a:hover {
   }
 
   #background {
-    top: -0%;
-    height: 120%;
     background-position: center;
+    min-height: 100vw;
+    min-width: 100vh;
+    height: 100%;
+    width: 100%;
   }
 
   /* NAVIGACE */
