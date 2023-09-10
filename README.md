@@ -1,5 +1,7 @@
 # umprum_wav_i18n
+Getting Started
 
+Please follow the documentation at vuejs.org!
 This template should help get you started developing with Vue 3 in Vite.
 
 ## Recommended IDE Setup
