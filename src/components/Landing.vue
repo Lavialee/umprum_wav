@@ -5,7 +5,6 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
 </script>
 
 <template>
-  <div id="background"></div>
   <!--landing page-->
   <section class="flexbox_column" id="landing">
     <!--audiovisual experience...-->

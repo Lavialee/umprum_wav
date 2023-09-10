@@ -15,6 +15,24 @@
   src: url("fonts/PPMonumentExtended-Bold.ttf") format('truetype');
 }
 
+:root {
+  --c1: rgb(225, 225, 0);
+
+  /*GREY  rgb(199,199,198)  */
+  --c2: rgb(199, 199, 198);
+
+  /*yellow rgb(225,225,0)  */
+  --c3:
+    rgb(225, 225, 0);
+
+  /*PINK rgb(255,167,209)  */
+  --c4:
+    rgb(255, 167, 209);
+  /*LIGHT GREY rgb(242,242,242)  */
+  --c5:
+    rgb(242, 242, 242);
+}
+
 /* GENERIC */
 html {
   scroll-behavior: smooth;
@@ -499,6 +517,11 @@ a:hover {
   grid-area: 3 / 3 / 4 / 4;
 }
 
+.vueperslide {
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+}
+
+
 /* SECOND PAGE */
 .bg-grad-explore {
   background: linear-gradient(180deg, #16452E 0%, #FFA7D1 59.9%, rgba(255, 255, 255, 0) 99.48%);
@@ -534,11 +557,217 @@ a:hover {
 #landing {
   display: flex;
   align-items: center;
-  width: 80%;
-  margin: 0% 10%;
+  width: 100%;
+  padding: 0% 10%;
   height: calc(100vh - 58px);
   flex-flow: wrap;
   justify-content: center;
+
+  background: -o-radial-gradient(var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
+  background: radial-gradient(var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
+  background-size: cover;
+  z-index: -3;
+
+  transition: --c1 0.1s ease-out, --c2 0.1s ease-out, --c3 0.1s ease-out;
+  -moz-transition: --c1 0.1s ease-out, --c2 0.1s ease-out, --c3 0.1s ease-out;
+
+  animation: anim 30s ease infinite normal;
+  margin-top: -50px;
+  padding-top: 50px;
+}
+
+
+@-webkit-keyframes anim {
+  from {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+
+  20% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  30% {
+    --c2: rgb(245, 64, 41);
+  }
+
+  40% {
+    --c1: rgb(245, 64, 41);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  45% {
+    --c4: rgb(255, 167, 209);
+
+  }
+
+  50% {
+    --c1: rgb(255, 167, 209);
+    --c2: rgb(242, 242, 242);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  80% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(225, 225, 0);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  90% {
+    --c1: rgb(242, 242, 242);
+    --c3: rgb(225, 225, 0);
+  }
+
+  to {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+}
+
+@-moz-keyframes anim {
+  from {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+
+  20% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  30% {
+    --c2: rgb(245, 64, 41);
+  }
+
+  40% {
+    --c1: rgb(245, 64, 41);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  45% {
+    --c4: rgb(255, 167, 209);
+
+  }
+
+  50% {
+    --c1: rgb(255, 167, 209);
+    --c2: rgb(242, 242, 242);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  80% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(225, 225, 0);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  90% {
+    --c1: rgb(242, 242, 242);
+    --c3: rgb(225, 225, 0);
+  }
+
+  to {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+}
+
+@keyframes anim {
+  from {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
+
+  20% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  30% {
+
+    --c2: rgb(245, 64, 41);
+  }
+
+  40% {
+    --c1: rgb(245, 64, 41);
+    --c2: rgb(255, 167, 209);
+    --c3: rgb(242, 242, 242);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(199, 199, 198);
+  }
+
+  45% {
+    --c4: rgb(255, 167, 209);
+
+  }
+
+  50% {
+    --c1: rgb(255, 167, 209);
+    --c2: rgb(242, 242, 242);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  80% {
+    --c1: rgb(199, 199, 198);
+    --c2: rgb(225, 225, 0);
+    --c3: rgb(255, 167, 209);
+    --c4: rgb(199, 199, 198);
+    --c5: rgb(255, 167, 209);
+  }
+
+  90% {
+    --c1: rgb(242, 242, 242);
+    --c3: rgb(225, 225, 0);
+  }
+
+  to {
+    --c1: rgb(225, 225, 0);
+    --c2: rgb(199, 199, 198);
+    --c3: rgb(225, 225, 0);
+    --c4: rgb(255, 167, 209);
+    --c5: rgb(242, 242, 242);
+  }
 }
 
 #first_header {
@@ -590,199 +819,6 @@ a:hover {
   align-self: center;
 }
 
-#background {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  min-height: 100vw;
-  min-width: 100vh;
-  height: 100%;
-  width: 100%;
-  transition: --c1 0.1s, --c2 0.1s, --c3 0.1s;
-
-  background: -o-radial-gradient(var(--c1) 15%, var(--c2) 25%,
-      var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
-
-  background: radial-gradient(var(--c1) 15%, var(--c2) 25%,
-      var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
-  -webkit-animation: c1 30s ease-in-out infinite normal;
-  animation: c1 30s ease-in-out infinite normal;
-  -moz-animation: c1 30s ease-in-out infinite normal;
-
-
-  background-position: center;
-  background-size: cover;
-  z-index: -3;
-}
-
-/*yellow rgb(225,225,0)  */
-@property --c1 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(225, 225, 0);
-}
-
-/*GREY  rgb(199,199,198)  */
-@property --c2 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(199, 199, 198);
-}
-
-/*yellow rgb(225,225,0)  */
-@property --c3 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(225, 225, 0);
-}
-
-/*PINK rgb(255,167,209)  */
-@property --c4 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(255, 167, 209);
-}
-
-/*LIGHT GREY rgb(242,242,242)  */
-@property --c5 {
-  syntax: '<color>';
-  inherits: false;
-  initial-value: rgb(242, 242, 242);
-}
-
-@-webkit-keyframes c1 {
-  from {
-    --c1: rgb(225, 225, 0);
-
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-
-  20% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  30% {
-
-    --c2: rgb(245, 64, 41);
-  }
-
-  40% {
-    --c1: rgb(245, 64, 41);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  45% {
-    --c4: rgb(255, 167, 209);
-
-  }
-
-  50% {
-    --c1: rgb(255, 167, 209);
-    --c2: rgb(242, 242, 242);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  80% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(225, 225, 0);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  90% {
-    --c1: rgb(242, 242, 242);
-    --c3: rgb(225, 225, 0);
-  }
-
-  to {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-}
-
-@keyframes c1 {
-  from {
-    --c1: rgb(225, 225, 0);
-
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-
-  20% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  30% {
-
-    --c2: rgb(245, 64, 41);
-  }
-
-  40% {
-    --c1: rgb(245, 64, 41);
-    --c2: rgb(255, 167, 209);
-    --c3: rgb(242, 242, 242);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(199, 199, 198);
-  }
-
-  45% {
-    --c4: rgb(255, 167, 209);
-
-  }
-
-  50% {
-    --c1: rgb(255, 167, 209);
-    --c2: rgb(242, 242, 242);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  80% {
-    --c1: rgb(199, 199, 198);
-    --c2: rgb(225, 225, 0);
-    --c3: rgb(255, 167, 209);
-    --c4: rgb(199, 199, 198);
-    --c5: rgb(255, 167, 209);
-  }
-
-  90% {
-    --c1: rgb(242, 242, 242);
-    --c3: rgb(225, 225, 0);
-  }
-
-  to {
-    --c1: rgb(225, 225, 0);
-    --c2: rgb(199, 199, 198);
-    --c3: rgb(225, 225, 0);
-    --c4: rgb(255, 167, 209);
-    --c5: rgb(242, 242, 242);
-  }
-}
-
-
 
 /* arrows */
 .arrow {
@@ -806,6 +842,18 @@ a:hover {
 }
 
 /* NAVIGACE */
+.vueperslides__arrow {
+  margin: 0 -24px;
+}
+
+.custom-select {
+  position: relative;
+  font-family: Arial;
+}
+
+.select-selected {
+  background-color: DodgerBlue;
+}
 
 .top-nav {
   display: flex;
@@ -1278,11 +1326,13 @@ a:hover {
   /* FIRST PAGE */
   #landing {
     display: flex;
-    align-items: start;
-    margin: 0 5%;
+    align-items: center;
+    padding: 0 5%;
+    padding-top: 60px;
+    margin-top: -60px;
     flex-flow: column;
     justify-content: space-between;
-    width: 90%;
+    width: 100%;
     height: calc(100svh-50px);
   }
 
@@ -1384,8 +1434,8 @@ a:hover {
   #arrows {
     height: 60px;
     margin-top: -15%;
-    margin-left: 25%;
   }
+
 
   .dots {
     font-size: 11px;

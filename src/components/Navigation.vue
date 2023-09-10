@@ -17,18 +17,18 @@ const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread 
       <li><a href="#socials">LINKS</a></li>
       <li><a href="#credits">CREDITS</a></li>
       <li>
-        <div class="locale-changer">
-          <select v-model="locale">
-            <option v-for="locale in availableLocales" :key="`locale-${locale}`" :value="locale">
+        <div class="locale-changer custom-select">
+          <select v-model="locale" style="font-family: Monument">
+            <option
+              style="font-family: Monument"
+              v-for="locale in availableLocales"
+              :key="`locale-${locale}`"
+              :value="locale"
+            >
               {{ locale }}
             </option>
           </select>
         </div>
-      </li>
-      <li>
-        <button size="sm" class="my-2 my-sm-0 btn-info" type="submit" onclick="i18n.locale = 'en'">
-          {{ $t('english') }}
-        </button>
       </li>
     </ul>
   </nav>
