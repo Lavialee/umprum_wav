@@ -1,34 +1,33 @@
 <script setup lang="ts">
 // @ts-ignore
-
+import { VueperSlides, VueperSlide } from 'vueperslides'
 import { useI18n } from 'vue-i18n'
 const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` returning
-import { VueperSlides, VueperSlide } from 'vueperslides'
 import 'vueperslides/dist/vueperslides.css'
 const slides = [
   {
-    image: 'public/photos/milano1.jpg'
+    image: '/photos/milano1.jpg'
   },
   {
-    image: 'public/photos/milano2.jpg'
+    image: '/photos/milano2.jpg'
   },
   {
-    image: 'public/photos/milano3.jpg'
+    image: '/photos/milano3.jpg'
   },
   {
-    image: 'public/photos/milano4.jpg'
+    image: '/photos/milano4.jpg'
   },
   {
-    image: 'public/photos/milano5.jpg'
+    image: '/photos/milano5.jpg'
   },
   {
-    image: 'public/photos/milano6.jpg'
+    image: '/photos/milano6.jpg'
   },
   {
-    image: 'public/photos/milano7.jpg'
+    image: '/photos/milano7.jpg'
   },
   {
-    image: 'public/photos/milano8.jpg'
+    image: '/photos/milano8.jpg'
   }
 ]
 </script>
