@@ -9,8 +9,8 @@ const i18n = createI18n({
   // something vue-i18n options here ...
   legacy: false,
   messages,
-  locale: 'en',
-  fallbackLocale: 'ja'
+  locale: 'cs',
+  fallbackLocale: 'en'
 })
 
 const app = createApp(App)
