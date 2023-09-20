@@ -7,7 +7,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
   <section id="credits">
     <div id="gradient7"></div>
     <section class="flexbox_column margin96">
-      <header class="h2 center" style="margin-bottom: 64px">
+      <header class="h2 center edges" style="margin-bottom: 64px">
         {{ t('credits.header') }}
       </header>
       <section class="flexbox_column">

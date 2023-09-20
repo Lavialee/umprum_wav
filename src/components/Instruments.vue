@@ -155,7 +155,10 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
             <div class="instrument_credit">MARKÉTA SLANÁ, LUKÁŠ HLAVÍN</div>
             <div class="instrument_credit_bold">{{ t('instruments.location') }}</div>
             <div class="instrument_credit">
-              {{ t('instruments.location_credit') }}
+              {{ t('instruments.location_credit_1') }}
+            </div>
+            <div class="instrument_credit">
+              {{ t('instruments.location_credit_2') }}
             </div>
             <div class="instrument_credit_bold">{{ t('instruments.architects') }}</div>
             <div class="instrument_credit">0,5 STUDIO</div>

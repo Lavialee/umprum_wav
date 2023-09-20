@@ -49,6 +49,7 @@ body {
   /* Firefox */
   margin: 0;
   font-family: "Monument";
+  background-color: #F2F2F2;
 }
 
 body::-webkit-scrollbar {
@@ -63,6 +64,10 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+footer {
+  background-color: #FFF;
 }
 
 .only_phone {
@@ -224,7 +229,7 @@ a:hover {
 .names {
   text-align: left;
   width: 40%;
-  font-size: 11px;
+  font-size: 18px;
 }
 
 .position {
@@ -365,7 +370,9 @@ a:hover {
 }
 
 .instrument_credit_bold {
-  font-weight: bold
+  font-weight: bold;
+  margin-top: 25px;
+
 }
 
 .instrument_credit,
@@ -374,7 +381,7 @@ a:hover {
 }
 
 #instruments {
-  background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 11.98%, rgba(242, 242, 242, 0) 86.98%, #F54029 100%);
+  background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 8%, rgba(242, 242, 242, 0) 92%, #F54029 100%);
 }
 
 /* FOURTH PAGE */
@@ -566,9 +573,9 @@ a:hover {
 #landing {
   display: flex;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   padding: 0% 10%;
-  height: calc(100vh - 58px);
+  height: 100vh;
   flex-flow: wrap;
   justify-content: center;
 
@@ -584,14 +591,14 @@ a:hover {
 
 #background {
   width: 100%;
-  height: calc(100vh - 58px);
+  height: 100vh;
   position: absolute;
   z-index: -3;
 }
 
 #bg_gradient {
   width: 100%;
-  height: calc(100vh - 58px);
+  height: 100vh;
   background: radial-gradient(circle at center, var(--c1) 15%, var(--c2) 25%, var(--c3) 45%, var(--c4) 55%, var(--c5) 75%);
   animation: c1 30s ease-in-out infinite normal;
 
@@ -967,6 +974,8 @@ a:hover {
   .names {
     text-align: center;
     width: 90%;
+    font-size: 11px;
+
     padding-bottom: 10px;
   }
 
@@ -1100,7 +1109,9 @@ a:hover {
   }
 
   .instrument_credit_bold {
-    font-weight: bold
+    font-weight: bold;
+    margin-top: 20px;
+
   }
 
   .instrument_credit,
@@ -1109,12 +1120,11 @@ a:hover {
   }
 
   .instrument_credit {
-    margin-bottom: 20px;
     max-width: 570px
   }
 
   #instruments {
-    background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 8%, rgba(242, 242, 242, 0) 92%, #F54029 100%);
+    background: linear-gradient(90deg, #F54029 0%, rgba(242, 242, 242, 0) 5%, rgba(242, 242, 242, 0) 95%, #F54029 100%);
   }
 
   #wav_text,
@@ -1342,7 +1352,7 @@ a:hover {
     flex-flow: column;
     justify-content: space-between;
     width: 100%;
-    height: calc(100svh-50px);
+    height: calc(100svh- 50px);
   }
 
   .flexbox_row {
