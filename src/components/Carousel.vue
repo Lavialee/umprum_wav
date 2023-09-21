@@ -39,8 +39,8 @@ const slides = [
       <header class="h2 edges centered">
         <span class="only_pc">• </span>{{ t('carousel.header') }}<span class="only_pc"> •</span>
       </header>
-      <p class="txt20 centered edges">
-        {{ t('carousel.perex_1') }}<br />{{ t('carousel.perex_2') }}
+      <p class="txt20 centered edges" style="max-width: 1200px">
+        {{ t('carousel.perex') }}
       </p>
     </section>
     <div class="carousel">

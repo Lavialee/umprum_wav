@@ -27,8 +27,8 @@ export const messages = {
     },
     carousel: {
       header: 'TAKE A CLOSER LOOK',
-      perex_1: 'The installation was created as part of the Tortona Design Week 2023 in Milan.',
-      perex_2: 'Now you have a chance to visit it in Prague.'
+      perex:
+        'The installation was created as part of the Tortona Design Week\xa02023 in Milan. Now you have a chance to visit it in Prague.'
     },
     about_wav: {
       header: '.WAV PROJECT',
@@ -55,8 +55,8 @@ export const messages = {
         "Theodor's Mora is a chordophone where one hand controls the bow and the other hand strums the strings. On one end the strings are attached to the wooden sound box, and on the other to a metal arm using standard guitar pegheads. The desired tone can be further adjusted by pulling and bending the flexible metal arm, which also serves as the neck of the instrument and transmits vibrations generated on the strings to the soundboard. The rectangular body sits on a metal pedestal that does not affect the sound coming from the oval opening in the sound box while simultaneously positioning the instrument at an optimal height for a standing player.",
       photography: 'PHOTOGRAPHY',
       location: 'LOCATION',
-      location_credit_1: 'EDUCENTRUM, DEPARTMENT OF EDUCATIONAL PROGRAMS,',
-      location_credit_2: 'CZECH PHILHARMONIC, RUDOLFINUM',
+      location_credit:
+        'EDUCENTRUM, DEPARTMENT OF EDUCATIONAL PROGRAMS, CZECH PHILHARMONIC, RUDOLFINUM',
       architects: 'ARCHITECTS OF THE SPACE'
     },
     about_umprum: {
@@ -86,9 +86,9 @@ export const messages = {
       follow: 'FOLLOW US ON SOCIALS',
       umprum: 'UMPRUM ACADEMY',
       studios: 'OUR STUDIOS',
-      product: 'Product design',
-      ddt: 'Design and digital technology',
-      gdvk: 'graphic design'
+      product: 'PRODUCT DESIGN',
+      ddt: 'DESIGN AND DIGITAL TECHNOLOGY',
+      gdvk: 'GRAPHIC DESIGN'
     },
     credits: {
       header: 'THIS PROJECT WOULD NOT EXIST WITHOUT',
@@ -150,8 +150,8 @@ export const messages = {
     },
     carousel: {
       header: 'PROZKOUMEJTE ZBLÍZKA',
-      perex_1: ' Po uvedení na prestižním milánském design weeku',
-      perex_2: 'máte nyní jedinečnou příležitost zažít instalaci zde v Praze.'
+      perex:
+        ' Po uvedení na prestižním milánském design weeku máte nyní jedinečnou příležitost zažít instalaci zde v Praze.'
     },
     about_wav: {
       header: '.WAV PROJEKT',
@@ -179,8 +179,7 @@ export const messages = {
         'Theodorova Mora je strunný nástroj, u\xa0kterého jedna ruka rozeznívá struny smyčcem a\xa0prsty druhé ruky vybrnkávávají melodii. Na jednom konci jsou struny připevněny k\xa0dřevěné ozvučnici a\xa0na druhém konci pomocí standardní kytarové mechaniky k\xa0ramenu z\xa0ocelové pásoviny. Požadovaný tón lze dále upravovat přepětím a\xa0ohýbáním pružného kovového ramene, které zároveň slouží jako krk nástroje a\xa0přenáší vibrace vznikající na strunách na ozvučnou desku. Tělo je umístěno na kovové podnoži, jenž zamezuje rušení zvuku vycházejícího z\xa0oválného otvoru v ozvučnici a\xa0zároveň umisťuje nástroj do optimální výšky pro stojící*ho hráče*ku. Theodor se rozhodl ponechat materiály v\xa0surové podobě s\xa0jedinou výjimkou – černě lazurované nitro ozvučné skříně podtrhuje neohraničenost hlubin, z\xa0nichž zvuk nástroje proudí.',
       photography: 'FOTOGRAFIE',
       location: 'LOKACE',
-      location_credit_1: ' EDUCENTRUM, ODDĚLENÍ VZDĚLÁVACÍCH PROGRAMŮ ',
-      location_credit_2: 'ČESKÉ FILHARMONIE, RUDOLFINUM',
+      location_credit: ' EDUCENTRUM, ODDĚLENÍ VZDĚLÁVACÍCH PROGRAMŮ ČESKÉ FILHARMONIE, RUDOLFINUM',
       architects: 'AUTOŘI ARCHITEKTONICKÉHO ŘEŠENÍ'
     },
     about_umprum: {
@@ -191,9 +190,9 @@ export const messages = {
       follow: 'SLEDUJTE NÁS',
       umprum: 'UMPRUM',
       studios: 'ATELIÉRY',
-      product: 'ATELIER PRODUKTOVEHO DESIGNU',
-      ddt: 'ATELIER DESIGNU A\xa0DIGITALNICH TECHNOLOGII',
-      gdvk: 'ATELIER GRAFICKEHO DESIGNU A VIZUALNI KOMUNIKACE'
+      product: 'ATELIÉR PRODUKTOVÉHO DESIGNU',
+      ddt: 'ATELIÉR DESIGNU A\xa0DIGITÁLNÍCH TECHNOLOGIÍ',
+      gdvk: 'ATELIÉR GRAFICKÉHO DESIGNU A VIZUÁLNÍ KOMUNIKACE'
     },
     credits: {
       header: 'K TOMUTO PROJEKTU PŘISPĚLI',

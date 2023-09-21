@@ -1,17 +1,3 @@
-<script setup lang="ts">
-// @ts-ignore
-import { ref } from 'vue'
-import { useI18n } from 'vue-i18n'
-const { t, locale, availableLocales } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` returning
-const toggleLanguage = () => {
-  // Toggle between 'en' and 'es' by checking the current locale
-  if (locale.value === 'en') {
-    locale.value = 'cs'
-  } else {
-    locale.value = 'en'
-  }
-}
-</script>
 <template>
   <nav class="top-nav">
     <input id="menu-toggle" type="checkbox" />
@@ -44,6 +30,43 @@ const toggleLanguage = () => {
   </nav>
 
   <nav class="bot_nav">
-    <a href="#landing"><img src="/svgs/to_top.svg" style="z-index: 100;"/></a>
+    <a href="#landing"><img src="/svgs/to_top.svg" style="z-index: 100" /></a>
   </nav>
 </template>
+<script setup lang="ts">
+import { ref, onMounted } from 'vue'
+import { useI18n } from 'vue-i18n'
+
+const { t, locale, availableLocales } = useI18n()
+const toggleLanguage = () => {
+  if (locale.value === 'en') {
+    locale.value = 'cs'
+  } else {
+    locale.value = 'en'
+  }
+}
+
+onMounted(() => {
+  // Access DOM elements after the component is mounted
+  const menuToggle = document.getElementById('menu-toggle')
+  const menuIcon = document.querySelector('.menu-button')
+  const menu = document.querySelector('.menu')
+
+  if (menuToggle && menuIcon) {
+    // Add a click event listener to the menu icon
+    menuIcon.addEventListener('click', () => {
+      menuIcon.classList.toggle('menu-open')
+      menuToggle.checked = !menuToggle.checked
+    })
+  }
+
+  // Add a click event listener to close the menu when a menu item is clicked
+  const menuItems = document.querySelectorAll('.menu li a')
+  menuItems.forEach((item) => {
+    item.addEventListener('click', () => {
+      menuToggle.checked = false
+      menuIcon.classList.remove('menu-open')
+    })
+  })
+})
+</script>

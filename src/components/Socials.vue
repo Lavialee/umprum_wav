@@ -16,7 +16,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       <header class="h2 center edges" style="margin-bottom: 32px">
         {{ t('socials.follow') }}
       </header>
-      <div class="flexbox_column dots" style="width: 90%; align-self: center">
+      <div class="flexbox_column" style="width: 90%; align-self: center">
         <div class="flexbox_row space_between" style="width: 100%; align-items: center">
           <img class="coda" src="/svgs/icon1.svg" />
           <a
@@ -32,7 +32,7 @@ const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` return
       <header class="txt20" style="margin-top: 42px; margin-bottom: 12px">
         {{ t('socials.studios') }}
       </header>
-      <div class="flexbox_column dots" style="width: 90%; align-self: center">
+      <div class="flexbox_column" style="width: 90%; align-self: center">
         <div class="flexbox_row space_between" style="width: 100%; align-items: center; margin-bottom: 18px;">
           <img class="coda" src="/svgs/icon2.svg" />
           <a
