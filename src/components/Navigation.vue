@@ -48,8 +48,8 @@ const toggleLanguage = () => {
 
 onMounted(() => {
   // Access DOM elements after the component is mounted
-  const menuToggle = document.getElementById('menu-toggle')
-  const menuIcon = document.querySelector('.menu-button')
+  const menuToggle = document.getElementById('menu-toggle') as HTMLInputElement
+  const menuIcon = document.querySelector('.menu-button') as HTMLInputElement
   const menu = document.querySelector('.menu')
 
   if (menuToggle && menuIcon) {

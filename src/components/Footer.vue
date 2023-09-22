@@ -1,16 +1,25 @@
 <script setup lang="ts">
-// @ts-ignore
 import { useI18n } from 'vue-i18n'
-const { t } = useI18n() // call `useI18n`, and spread `t` from  `useI18n` returning
+const { t } = useI18n()
 const { locale } = useI18n()
 
+import { ref, watch } from 'vue'
 
+// Define a ref for imageClass
+const imageClass = ref(`sponsors-${locale.value}`)
+
+// Watch for changes in the locale
+watch(locale, (newLocale) => {
+  imageClass.value = `sponsors-${newLocale}`
+})
 </script>
+
+
 <template>
   <section class="flexbox_column">
     <div id="gradient8"></div>
   </section>
   <footer>
-    <img id="sponsors" />
+    <img :class="imageClass" id="sponsors" />
   </footer>
 </template>

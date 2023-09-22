@@ -991,12 +991,12 @@ footer {
     padding-bottom: 70px;
   }
 
-  #sponsors-en {
+  .sponsors-en {
     content: url("/svgs/sponzori_small_en.svg");
 
   }
 
-  #sponsors-cs {
+  .sponsors-cs {
     content: url("/svgs/sponzori_small_cs.svg");
 
   }
@@ -1182,6 +1182,7 @@ footer {
     border-radius: 97px;
     margin-top: 0px;
     text-align: center;
+    font-size: 8px;
   }
 
   .coda {
